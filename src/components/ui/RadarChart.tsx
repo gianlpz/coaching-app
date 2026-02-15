@@ -37,7 +37,7 @@ export function RadarChart({
   const dataPath = dataPoints.map((p, i) => `${i === 0 ? "M" : "L"}${p[0]},${p[1]}`).join(" ") + " Z";
 
   return (
-    <svg viewBox={`0 0 ${size} ${size}`} className={className} width={size} height={size}>
+    <svg viewBox={`0 0 ${size} ${size}`} className={`w-full max-w-[280px] md:max-w-[360px] h-auto ${className}`}>
       {/* Grid rings */}
       {rings.map((scale) => {
         const ringPoints = Array.from({ length: n }, (_, i) =>

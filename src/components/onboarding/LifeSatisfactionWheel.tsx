@@ -31,25 +31,27 @@ export function LifeSatisfactionWheel({
 
   return (
     <div className="space-y-6">
-      <p className="text-stone-600 text-center">
+      <p className="text-stone-600 text-center md:text-left">
         Rate your satisfaction in each area from 1 (low) to 10 (high)
       </p>
 
-      <div className="flex justify-center">
-        <RadarChart labels={labels} values={values} />
-      </div>
+      <div className="md:flex md:gap-8">
+        <div className="flex justify-center md:sticky md:top-8 md:shrink-0 md:self-start">
+          <RadarChart labels={labels} values={values} />
+        </div>
 
-      <div className="space-y-4">
-        {dimensions.map((dim) => (
-          <SliderInput
-            key={dim.id}
-            label={dim.label}
-            value={scores[dim.id]}
-            onChange={(value) =>
-              setScores((prev) => ({ ...prev, [dim.id]: value }))
-            }
-          />
-        ))}
+        <div className="space-y-4 mt-6 md:mt-0 md:flex-1">
+          {dimensions.map((dim) => (
+            <SliderInput
+              key={dim.id}
+              label={dim.label}
+              value={scores[dim.id]}
+              onChange={(value) =>
+                setScores((prev) => ({ ...prev, [dim.id]: value }))
+              }
+            />
+          ))}
+        </div>
       </div>
 
       <button

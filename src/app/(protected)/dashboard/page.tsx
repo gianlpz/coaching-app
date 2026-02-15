@@ -68,7 +68,7 @@ export default async function DashboardPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-stone-900">Your Journey</h1>
+          <h1 className="text-2xl md:text-3xl font-bold text-stone-900">Your Journey</h1>
           <p className="text-stone-500 mt-0.5">Keep going, you&apos;re doing great</p>
         </div>
         <StreakCounter count={streak.currentStreak} />
@@ -108,7 +108,7 @@ export default async function DashboardPage() {
         <h2 className="text-lg font-semibold text-stone-900 mb-3">
           Your Categories
         </h2>
-        <div className="space-y-3">
+        <div className="space-y-3 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4">
           {categoryProgress.map((cat) => (
             <CategoryCard
               key={cat.slug}

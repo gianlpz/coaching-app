@@ -52,26 +52,55 @@ export function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-stone-200 pb-safe z-50">
-      <div className="flex justify-around items-center h-16 max-w-lg mx-auto">
-        {navItems.map((item) => {
-          const isActive = pathname.startsWith(item.href);
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`flex flex-col items-center justify-center w-full h-full transition-colors min-h-[44px] ${
-                isActive
-                  ? "text-[#8B7355]"
-                  : "text-stone-400 hover:text-stone-900"
-              }`}
-            >
-              {item.icon}
-              <span className="text-xs mt-1 font-medium">{item.label}</span>
-            </Link>
-          );
-        })}
-      </div>
-    </nav>
+    <>
+      {/* Mobile bottom nav */}
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-stone-200 pb-safe z-50 lg:hidden">
+        <div className="flex justify-around items-center h-16 max-w-lg mx-auto">
+          {navItems.map((item) => {
+            const isActive = pathname.startsWith(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`flex flex-col items-center justify-center w-full h-full transition-colors min-h-[44px] ${
+                  isActive
+                    ? "text-[#8B7355]"
+                    : "text-stone-400 hover:text-stone-900"
+                }`}
+              >
+                {item.icon}
+                <span className="text-xs mt-1 font-medium">{item.label}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+
+      {/* Desktop sidebar */}
+      <nav className="hidden lg:flex fixed top-0 left-0 bottom-0 w-64 bg-white border-r border-stone-200 flex-col z-50">
+        <div className="px-6 py-8">
+          <h1 className="text-xl font-bold text-[#8B7355]">Coaching App</h1>
+        </div>
+        <div className="flex-1 px-3 space-y-1">
+          {navItems.map((item) => {
+            const isActive = pathname.startsWith(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors min-h-[44px] ${
+                  isActive
+                    ? "bg-[#F5F0E8] text-[#8B7355] font-medium"
+                    : "text-stone-500 hover:bg-stone-50 hover:text-stone-900"
+                }`}
+              >
+                {item.icon}
+                <span className="text-sm">{item.label}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+    </>
   );
 }

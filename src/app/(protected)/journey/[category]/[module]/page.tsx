@@ -50,7 +50,7 @@ export default async function ModulePage({ params }: PageProps) {
         </div>
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-2 lg:max-w-2xl">
         {mod.lessons.map((lesson) => {
           const progress = allProgress.find(
             (p) =>

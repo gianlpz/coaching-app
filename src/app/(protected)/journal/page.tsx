@@ -41,7 +41,7 @@ export default async function JournalPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-stone-900">Journal</h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-stone-900">Journal</h1>
         <p className="text-stone-500 mt-0.5">
           Your reflections and insights from lessons
         </p>
@@ -61,7 +61,7 @@ export default async function JournalPage() {
             <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-3">
               {date}
             </h2>
-            <div className="space-y-3">
+            <div className="space-y-3 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
               {dateEntries.map((entry) => (
                 <Card key={entry.id} padding="sm">
                   <div className="flex items-start gap-3">

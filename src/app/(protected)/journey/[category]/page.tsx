@@ -49,7 +49,7 @@ export default async function CategoryPage({ params }: PageProps) {
         </div>
       </div>
 
-      <div className="space-y-3">
+      <div className="space-y-3 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
         {category.modules.map((mod) => {
           const completedLessons = allProgress.filter(
             (p) =>

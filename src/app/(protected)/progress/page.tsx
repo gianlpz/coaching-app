@@ -48,43 +48,45 @@ export default async function ProgressPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-stone-900">Your Progress</h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-stone-900">Your Progress</h1>
         <p className="text-stone-500 mt-0.5">Track your growth over time</p>
       </div>
 
-      {/* Streak */}
-      <Card>
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-sm text-stone-500">Current streak</p>
-            <p className="text-3xl font-bold text-stone-900">
-              {streak.currentStreak}{" "}
-              <span className="text-lg font-normal text-stone-500">days</span>
-            </p>
+      <div className="md:grid md:grid-cols-2 md:gap-4 space-y-6 md:space-y-0">
+        {/* Streak */}
+        <Card>
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-sm text-stone-500">Current streak</p>
+              <p className="text-3xl font-bold text-stone-900">
+                {streak.currentStreak}{" "}
+                <span className="text-lg font-normal text-stone-500">days</span>
+              </p>
+            </div>
+            <div className="text-right">
+              <p className="text-sm text-stone-500">Longest streak</p>
+              <p className="text-xl font-bold text-stone-900">
+                {streak.longestStreak} days
+              </p>
+            </div>
+            <span className="text-4xl">{streak.currentStreak > 0 ? "🔥" : "💤"}</span>
           </div>
-          <div className="text-right">
-            <p className="text-sm text-stone-500">Longest streak</p>
-            <p className="text-xl font-bold text-stone-900">
-              {streak.longestStreak} days
-            </p>
-          </div>
-          <span className="text-4xl">{streak.currentStreak > 0 ? "🔥" : "💤"}</span>
-        </div>
-      </Card>
+        </Card>
 
-      {/* Overall progress */}
-      <Card>
-        <h2 className="font-semibold text-stone-900 mb-3">Overall Progress</h2>
-        <ProgressBar
-          value={completedLessons}
-          max={totalLessons}
-          size="lg"
-          showLabel
-        />
-        <p className="text-sm text-stone-500 mt-2">
-          {completedLessons} of {totalLessons} lessons completed
-        </p>
-      </Card>
+        {/* Overall progress */}
+        <Card>
+          <h2 className="font-semibold text-stone-900 mb-3">Overall Progress</h2>
+          <ProgressBar
+            value={completedLessons}
+            max={totalLessons}
+            size="lg"
+            showLabel
+          />
+          <p className="text-sm text-stone-500 mt-2">
+            {completedLessons} of {totalLessons} lessons completed
+          </p>
+        </Card>
+      </div>
 
       {/* Category progress */}
       <Card>
@@ -120,43 +122,45 @@ export default async function ProgressPage() {
         </div>
       </Card>
 
-      {/* Badges */}
-      <Card>
-        <h2 className="font-semibold text-stone-900 mb-4">Badges</h2>
-        <div className="grid grid-cols-3 gap-2">
-          {allBadgeTypes.map((bt) => {
-            const earned = earnedBadgeTypes.has(bt.type);
-            const badge = badges.find((b) => b.badgeType === bt.type);
-            return (
-              <Badge
-                key={bt.type}
-                badgeType={bt.type}
-                badgeLabel={bt.label}
-                earned={earned}
-                earnedAt={badge?.earnedAt}
-              />
-            );
-          })}
-        </div>
-      </Card>
-
-      {/* Life Satisfaction Chart */}
-      {assessment && (
+      <div className="lg:grid lg:grid-cols-2 lg:gap-4 space-y-6 lg:space-y-0">
+        {/* Badges */}
         <Card>
-          <h2 className="font-semibold text-stone-900 mb-4">
-            Life Satisfaction
-          </h2>
-          <div className="flex justify-center">
-            <RadarChart
-              labels={Object.keys(assessment.scores)}
-              values={Object.values(assessment.scores)}
-            />
+          <h2 className="font-semibold text-stone-900 mb-4">Badges</h2>
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-2">
+            {allBadgeTypes.map((bt) => {
+              const earned = earnedBadgeTypes.has(bt.type);
+              const badge = badges.find((b) => b.badgeType === bt.type);
+              return (
+                <Badge
+                  key={bt.type}
+                  badgeType={bt.type}
+                  badgeLabel={bt.label}
+                  earned={earned}
+                  earnedAt={badge?.earnedAt}
+                />
+              );
+            })}
           </div>
-          <p className="text-xs text-stone-400 text-center mt-2">
-            From your onboarding assessment
-          </p>
         </Card>
-      )}
+
+        {/* Life Satisfaction Chart */}
+        {assessment && (
+          <Card>
+            <h2 className="font-semibold text-stone-900 mb-4">
+              Life Satisfaction
+            </h2>
+            <div className="flex justify-center">
+              <RadarChart
+                labels={Object.keys(assessment.scores)}
+                values={Object.values(assessment.scores)}
+              />
+            </div>
+            <p className="text-xs text-stone-400 text-center mt-2">
+              From your onboarding assessment
+            </p>
+          </Card>
+        )}
+      </div>
     </div>
   );
 }

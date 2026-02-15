@@ -39,12 +39,12 @@ export function CategoryCard({
     <Link href={`/journey/${slug}`}>
       <Card className="hover:shadow-md transition-shadow">
         <div className="flex items-start gap-4">
-          <div className="w-20 h-20 rounded-xl overflow-hidden shrink-0">
+          <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden shrink-0">
             <Image
               src={imageMap[slug] || "/images/categories/career.jpg"}
               alt={title}
-              width={80}
-              height={80}
+              width={96}
+              height={96}
               className="w-full h-full object-cover"
             />
           </div>

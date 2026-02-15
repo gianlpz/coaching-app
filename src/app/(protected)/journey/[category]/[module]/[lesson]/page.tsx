@@ -37,7 +37,7 @@ export default async function LessonPage({ params }: PageProps) {
   const initialStep = progress?.completed ? 0 : (progress?.currentStep || 0);
 
   return (
-    <div className="pb-4">
+    <div className="pb-4 lg:max-w-2xl lg:mx-auto">
       <LessonStepView
         lesson={lesson}
         categorySlug={categorySlug}
