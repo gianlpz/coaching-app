@@ -1,0 +1,15 @@
+{
+  "slug": "career-values-sort",
+  "title": "Career Values Sort",
+  "description": "Identify which career values matter most to you right now",
+  "dimensions": [
+    { "id": "autonomy", "label": "Autonomy", "description": "Freedom to make your own decisions and manage your time" },
+    { "id": "impact", "label": "Impact", "description": "Making a meaningful difference in others' lives or the world" },
+    { "id": "growth", "label": "Growth", "description": "Continuous learning, skill-building, and career advancement" },
+    { "id": "stability", "label": "Stability", "description": "Job security, predictable income, and low risk" },
+    { "id": "creativity", "label": "Creativity", "description": "Expressing original ideas and solving problems in new ways" },
+    { "id": "recognition", "label": "Recognition", "description": "Being acknowledged and respected for your contributions" },
+    { "id": "connection", "label": "Connection", "description": "Working with people you enjoy and building strong work relationships" },
+    { "id": "compensation", "label": "Compensation", "description": "Earning well and having financial rewards for your work" }
+  ]
+}

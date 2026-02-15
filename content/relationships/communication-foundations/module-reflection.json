@@ -1,0 +1,76 @@
+{
+  "title": "Module Reflection: Choose One Skill to Practice",
+  "description": "Review what you've learned about communication and choose one skill to focus on building into a real habit.",
+  "order": 4,
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "You've Got the Tools",
+      "content": "In this module, you learned three powerful communication skills: knowing your style, listening deeply, and speaking without blame. Any one of them could improve a relationship overnight. But knowing a skill and using it are two different things. Let's make sure this doesn't stay as just knowledge."
+    },
+    {
+      "type": "learn",
+      "title": "The Power of One Focus",
+      "content": "Motivational Interviewing research shows that people who commit to one specific change are far more likely to follow through than those who try to change everything at once. This is because new behaviors need repetition to become habits, and spreading your attention across multiple skills means none of them get practiced enough to stick. The key is choosing the skill that would make the biggest difference in your life right now — not the one that sounds most impressive, but the one that connects to a real pain point or a real relationship you care about. When you focus on one skill, you start to notice opportunities to use it everywhere.",
+      "keyTakeaway": "Committing to practice one communication skill consistently will create more real change than half-heartedly trying all three."
+    },
+    {
+      "type": "do",
+      "title": "Choose Your Skill",
+      "content": "Review the three skills you learned in this module, then rank them from most to least impactful for your life right now. Think about which one addresses your most pressing relationship challenge.",
+      "exerciseType": "ranking",
+      "exercisePrompt": "Rank these skills from the one that would make the biggest difference in your life right now (1) to the least urgent (3).",
+      "exerciseItems": [
+        {
+          "id": "assertive-communication",
+          "label": "Assertive Communication",
+          "description": "Expressing your needs clearly and respectfully instead of going passive, aggressive, or passive-aggressive"
+        },
+        {
+          "id": "active-listening",
+          "label": "Active Listening",
+          "description": "Moving from Level 1 (listening to respond) to Level 2-3 (listening to understand and connect)"
+        },
+        {
+          "id": "i-statements",
+          "label": "I-Statements",
+          "description": "Replacing blame and criticism with 'I feel... when... because...' to express needs without triggering defensiveness"
+        }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Getting Specific",
+      "content": "A skill becomes real when you attach it to a specific person, situation, and moment. Let's make your choice concrete.",
+      "reflectPrompts": [
+        {
+          "id": "why-this-skill",
+          "prompt": "Why did you rank your top skill first? What relationship or situation is it most needed in?",
+          "type": "text"
+        },
+        {
+          "id": "obstacle",
+          "prompt": "What's the biggest obstacle that might stop you from practicing this skill? (Time, fear, forgetting, old habits?)",
+          "type": "text"
+        },
+        {
+          "id": "confidence",
+          "prompt": "How confident are you that you'll actually practice this skill in the next week?",
+          "type": "scale"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Your Communication Commitment",
+      "content": "You've done the hardest part — you understand the skills and you've chosen your focus. Now let's make it concrete enough that you'll actually do it.",
+      "commitPrompt": "Pick the commitment that matches your top-ranked skill.",
+      "commitOptions": [
+        "This week I'll practice assertive communication by expressing one need or preference I would normally keep to myself",
+        "This week I'll have one conversation where I focus entirely on Level 2 listening — no fixing, no advising, just understanding",
+        "This week I'll catch one blame statement before it leaves my mouth and convert it into an I-statement"
+      ]
+    }
+  ]
+}

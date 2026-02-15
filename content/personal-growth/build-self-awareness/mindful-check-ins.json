@@ -1,0 +1,56 @@
+{
+  "title": "Mindful Check-Ins",
+  "description": "Learn a simple 2-minute body scan and emotion-naming practice you can use anytime. Build the habit of checking in with yourself so awareness becomes second nature.",
+  "order": 3,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "Two Minutes Can Change Your Day",
+      "content": "What if the most useful thing you could do right now takes less time than brushing your teeth? A mindful check-in is a 2-minute pause where you tune into your body and name what you're feeling. It sounds simple because it is. But most of us go entire days without doing it — and that's where stress quietly builds up."
+    },
+    {
+      "type": "learn",
+      "title": "The Power of Naming What You Feel",
+      "content": "Neuroscience research shows that simply labeling an emotion — saying 'I feel anxious' instead of just feeling anxious — reduces the intensity of that emotion. Scientists call this 'affect labeling,' and it works by engaging the prefrontal cortex, which helps regulate the emotional brain. Mindfulness adds another layer: instead of just naming the emotion, you notice where it lives in your body. Stress might show up as tight shoulders, sadness as heaviness in the chest, excitement as energy in the hands. When you combine body awareness with emotion naming, you get a powerful, portable self-awareness tool you can use anywhere — in a meeting, before a tough conversation, or lying in bed at night.",
+      "keyTakeaway": "Naming your emotions and noticing body sensations is a quick, science-backed way to reduce stress and build self-awareness."
+    },
+    {
+      "type": "do",
+      "title": "Your 2-Minute Check-In",
+      "content": "Follow this guided check-in step by step. It works best if you can close your eyes for a moment, but it's not required. Check off each step as you complete it.",
+      "exerciseType": "checklist",
+      "exercisePrompt": "Work through each step of the body scan and emotion check-in.",
+      "exerciseItems": [
+        { "id": "pause", "label": "Pause and take one slow breath", "description": "Inhale through your nose for 4 counts, exhale through your mouth for 6 counts" },
+        { "id": "head", "label": "Scan your head and face", "description": "Notice any tension in your forehead, jaw, or around your eyes" },
+        { "id": "shoulders", "label": "Scan your shoulders and chest", "description": "Are your shoulders raised? Is your chest tight or open?" },
+        { "id": "stomach", "label": "Scan your stomach and core", "description": "Notice any butterflies, tightness, or calm" },
+        { "id": "hands-legs", "label": "Scan your hands and legs", "description": "Notice if you're holding tension, fidgeting, or feeling grounded" },
+        { "id": "emotion", "label": "Name your emotion", "description": "In one or two words, what are you feeling right now? (e.g., calm, restless, tired, hopeful)" },
+        { "id": "accept", "label": "Accept what you find", "description": "Whatever you noticed, say to yourself: 'This is what's here right now, and that's okay'" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "After the Check-In",
+      "content": "You just spent two minutes with yourself. That's a bigger deal than it might seem. Let's capture what you noticed.",
+      "reflectPrompts": [
+        { "id": "body-finding", "prompt": "Where in your body did you notice the most sensation?", "type": "text" },
+        { "id": "emotion-name", "prompt": "What emotion did you name? Did naming it change how it felt?", "type": "text" },
+        { "id": "ease", "prompt": "How easy was it to slow down and tune in?", "type": "scale" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Build the Check-In Habit",
+      "content": "The real magic of mindful check-ins comes from repetition. Pick one moment in your day to make this your default pause point.",
+      "commitPrompt": "I'll do a 2-minute check-in every day this week at...",
+      "commitOptions": [
+        "Right after I wake up, before I look at my phone",
+        "During my lunch break, before I eat",
+        "At night before bed, as part of my wind-down routine"
+      ]
+    }
+  ]
+}

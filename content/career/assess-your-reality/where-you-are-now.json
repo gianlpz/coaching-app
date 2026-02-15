@@ -1,0 +1,55 @@
+{
+  "title": "Where You Are Now",
+  "description": "Rate your career satisfaction across 6 key dimensions to get an honest snapshot of your current reality.",
+  "order": 1,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Honest Check-In",
+      "content": "When someone asks \"How's work going?\" most of us give the auto-pilot answer: \"Fine, busy.\" But what if you actually stopped and took an honest look? Not to judge yourself, but to get clear on where things really stand. Clarity is the first step toward change \u2014 and you might be closer to a breakthrough than you think."
+    },
+    {
+      "type": "learn",
+      "title": "The Six Dimensions of Career Satisfaction",
+      "content": "Career satisfaction isn't one thing \u2014 it's a combination of factors that each contribute to how you feel about your work. The GROW model starts by asking: what is your current Reality? Not where you wish you were, but where you honestly are today. Research on career wellbeing identifies six key dimensions: meaningful work, achievement, relationships, compensation, growth, and work-life balance. Most people who feel stuck or unhappy at work assume the whole thing is broken. But when you rate each dimension separately, you almost always find that some areas are doing better than others. That's incredibly useful information.",
+      "keyTakeaway": "Career dissatisfaction is rarely about everything being wrong \u2014 breaking it into dimensions reveals exactly where to focus your energy."
+    },
+    {
+      "type": "do",
+      "title": "Rate Your Six Dimensions",
+      "content": "Rate each dimension of your current career on a scale of 1 (very dissatisfied) to 10 (thriving). Be honest with yourself. This is a private snapshot \u2014 nobody is grading you. If you're between jobs, rate based on your most recent work experience.",
+      "exerciseType": "scale",
+      "exercisePrompt": "Rate your satisfaction with each career dimension from 1 (very dissatisfied) to 10 (thriving).",
+      "exerciseItems": [
+        { "id": "meaning", "label": "Meaningful Work", "description": "Does your work feel purposeful and connected to something you care about?" },
+        { "id": "achievement", "label": "Achievement", "description": "Do you feel a sense of accomplishment and progress in what you do?" },
+        { "id": "relationships", "label": "Relationships", "description": "Do you feel connected to and supported by the people you work with?" },
+        { "id": "compensation", "label": "Compensation", "description": "Does your pay and benefits feel fair for the work you do?" },
+        { "id": "growth", "label": "Growth & Development", "description": "Are you learning, developing new skills, and advancing?" },
+        { "id": "balance", "label": "Work-Life Balance", "description": "Does your work allow you to live the life you want outside of it?" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "What the Numbers Tell You",
+      "content": "Step back and look at your ratings as a whole. The highs show you what to protect. The lows show you where to focus. And the pattern tells a story about what kind of change you might need.",
+      "reflectPrompts": [
+        { "id": "highest-dim", "prompt": "Which dimension scored highest? Why do you think that area is working well?", "type": "text" },
+        { "id": "lowest-dim", "prompt": "Which dimension scored lowest? What would it take to move it up by just one point?", "type": "text" },
+        { "id": "overall-satisfaction", "prompt": "Looking at all six ratings, how satisfied are you with your career overall?", "type": "scale" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "One Dimension, One Action",
+      "content": "You don't need to fix everything at once. Pick the dimension that would make the biggest difference if it improved even slightly, and take one step toward it.",
+      "commitPrompt": "Choose one action focused on your lowest-rated dimension:",
+      "commitOptions": [
+        "Write down what a +2 improvement in my lowest dimension would look like",
+        "Identify one person who could help me improve in that area and reach out",
+        "Spend 15 minutes researching one concrete step I could take this month"
+      ]
+    }
+  ]
+}

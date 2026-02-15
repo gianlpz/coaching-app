@@ -1,0 +1,86 @@
+{
+  "title": "Thought Patterns in Relationships",
+  "description": "Use CBT thought records to identify and reframe unhelpful thinking patterns that show up in your relationships.",
+  "order": 3,
+  "estimatedMinutes": 7,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Story You Tell Yourself",
+      "content": "\"They didn't text back — they must not care.\" \"They looked annoyed — I must have done something wrong.\" We all fill in blanks with stories, and those stories shape how we feel and what we do next. What if some of those stories aren't as true as they feel?"
+    },
+    {
+      "type": "learn",
+      "title": "Cognitive Distortions in Relationships",
+      "content": "Cognitive Behavioral Therapy (CBT) teaches that our thoughts, feelings, and actions are all connected. When something happens in a relationship, we automatically interpret it — and that interpretation drives our emotional response. The problem is, our interpretations are often distorted by old patterns. Common distortions in relationships include mind-reading (assuming you know what they're thinking), catastrophizing (jumping to the worst-case scenario), personalization (believing everything is about you), and all-or-nothing thinking (they're either perfect or terrible). Recognizing these patterns doesn't mean your feelings are wrong — it means your automatic interpretation might deserve a second look.",
+      "keyTakeaway": "The way you interpret what happens in relationships is often shaped by distortions, and learning to spot them gives you more choices in how you respond."
+    },
+    {
+      "type": "do",
+      "title": "Thought Record Practice",
+      "content": "Think of a recent moment in a relationship that triggered a strong emotion — frustration, anxiety, hurt, anger. Walk through the steps below to examine what happened under the surface.",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Complete each section of this thought record based on a real recent experience.",
+      "exerciseItems": [
+        {
+          "id": "situation",
+          "label": "The Situation",
+          "description": "What happened? Describe it like a camera would see it — just the facts."
+        },
+        {
+          "id": "automatic-thought",
+          "label": "Your Automatic Thought",
+          "description": "What did you immediately think or tell yourself?"
+        },
+        {
+          "id": "emotion",
+          "label": "The Emotion",
+          "description": "What did you feel, and how intense was it (1-10)?"
+        },
+        {
+          "id": "distortion-check",
+          "label": "Distortion Check",
+          "description": "Could this be mind-reading, catastrophizing, personalization, or all-or-nothing thinking?"
+        },
+        {
+          "id": "balanced-thought",
+          "label": "A More Balanced Thought",
+          "description": "What's another way to interpret this situation that accounts for all the evidence?"
+        }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "What Shifted?",
+      "content": "Reframing a thought doesn't mean pretending everything is fine. It means giving yourself a fuller picture so you can respond from a grounded place instead of a reactive one.",
+      "reflectPrompts": [
+        {
+          "id": "emotion-shift",
+          "prompt": "Did your emotional intensity change at all after writing the balanced thought? How?",
+          "type": "text"
+        },
+        {
+          "id": "common-distortion",
+          "prompt": "Which distortion (mind-reading, catastrophizing, personalization, all-or-nothing) do you think shows up most often for you?",
+          "type": "text"
+        },
+        {
+          "id": "difficulty",
+          "prompt": "How difficult was it to find a balanced thought?",
+          "type": "scale"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Catching Thoughts in the Wild",
+      "content": "The real power of thought records comes from practicing them in everyday moments, not just when things feel big. Choose a way to keep building this muscle.",
+      "commitPrompt": "Pick one practice to try before your next lesson.",
+      "commitOptions": [
+        "When I notice a strong reaction in a relationship this week, I'll write a quick thought record",
+        "I'll set a daily reminder to check in: what story am I telling myself right now?",
+        "I'll share the concept of distortions with someone and see if they recognize any in their own thinking"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Module Reflection: Your Values & Strengths",
+  "description": "Review everything you've discovered about your values and strengths, then set a clear intention for how to carry this forward.",
+  "order": 4,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "Let's Bring It All Together",
+      "content": "Over the last few lessons, you've done something most people never take the time to do: you got clear on what actually matters to you. You've named your values, spotted your strengths, and measured where the gaps are. Now it's time to step back and see the full picture."
+    },
+    {
+      "type": "learn",
+      "title": "From Insight to Direction",
+      "content": "In coaching, we say that awareness without action is just entertainment. The work you've done so far has built a real foundation \u2014 but the magic happens when you use that self-knowledge to guide real decisions. The GROW model from coaching science gives us a helpful frame: you've been working on the G (Goal \u2014 what matters to you) and the R (Reality \u2014 where you are now). The next step is exploring Options and building Will to act. Your values and strengths aren't just interesting facts about yourself. They're decision-making tools. Every time you face a career choice \u2014 big or small \u2014 you can ask: does this move me toward my values? Does it use my strengths?",
+      "keyTakeaway": "Self-knowledge is only powerful when you use it as a compass for real decisions \u2014 your values and strengths are your personal decision-making toolkit."
+    },
+    {
+      "type": "do",
+      "title": "Write Your Values-Strengths Statement",
+      "content": "Take what you've learned and craft a short personal statement. This isn't a resume blurb \u2014 it's a reminder to yourself about who you are and what drives you. Use this format: \"I'm someone who values [top 2-3 values]. I'm at my best when I'm using my strengths of [top 2-3 strengths]. The work that lights me up is [description].\" Don't worry about getting it perfect. You can revise it anytime.",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Write your personal values-strengths statement. Use the format: \"I'm someone who values ___. I'm at my best when I'm using my strengths of ___. The work that lights me up is ___.\"",
+      "exerciseItems": []
+    },
+    {
+      "type": "reflect",
+      "title": "Looking Forward",
+      "content": "You've built a clearer picture of who you are at your best. Let's reflect on what this means for your next steps.",
+      "reflectPrompts": [
+        { "id": "biggest-insight", "prompt": "What was the single biggest insight you gained from this module?", "type": "text" },
+        { "id": "confidence", "prompt": "How confident do you feel about knowing what you want from your career right now?", "type": "scale" },
+        { "id": "next-step", "prompt": "What is one thing you want to do differently at work based on what you've learned?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Set Your Intention",
+      "content": "Before you move on, set one intention that connects your values and strengths to your daily life. This isn't a massive goal \u2014 it's a simple commitment to show up differently, starting now.",
+      "commitPrompt": "Choose one intention to carry forward from this module:",
+      "commitOptions": [
+        "Review my values-strengths statement once a week for the next month",
+        "Use my values as a filter the next time I face a work decision",
+        "Share what I learned about my strengths with someone I trust this week"
+      ]
+    }
+  ]
+}

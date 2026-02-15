@@ -1,0 +1,91 @@
+{
+  "title": "How You Communicate",
+  "description": "Discover your default communication style and understand how it shapes your conversations and relationships.",
+  "order": 1,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "What Others Hear",
+      "content": "You know what you mean when you say something. But have you ever wondered what the other person actually hears? The gap between your intention and their experience is where most relationship friction lives. Today, you're going to get curious about your side of that gap."
+    },
+    {
+      "type": "learn",
+      "title": "Four Communication Styles",
+      "content": "Research on interpersonal communication identifies four core styles. Passive communicators avoid expressing their needs and often say \"it's fine\" when it isn't — they keep the peace but build resentment. Aggressive communicators express needs forcefully, often at the expense of others — they get heard but damage trust. Passive-aggressive communicators express frustration indirectly through sarcasm, the silent treatment, or subtle sabotage. Assertive communicators express their needs clearly and respectfully while considering the other person's perspective. Most of us use different styles in different situations — you might be assertive at work but passive with your family. The Gottman Method research shows that assertive communication is the strongest predictor of relationship satisfaction.",
+      "keyTakeaway": "Assertive communication — expressing your needs clearly while respecting others — is the style most strongly linked to healthy, lasting relationships."
+    },
+    {
+      "type": "do",
+      "title": "Communication Style Quiz",
+      "content": "For each situation below, choose the response that's closest to how you'd actually react — not how you'd like to react. Honesty makes this useful.",
+      "exerciseType": "multiple-choice",
+      "exercisePrompt": "Choose your most likely response in each scenario.",
+      "exerciseItems": [
+        {
+          "id": "q1",
+          "label": "Your roommate keeps leaving dirty dishes in the sink. What do you do?"
+        },
+        {
+          "id": "q2",
+          "label": "A friend keeps interrupting you every time you talk. How do you handle it?"
+        },
+        {
+          "id": "q3",
+          "label": "Your partner makes a plan without asking you first. What's your response?"
+        },
+        {
+          "id": "q4",
+          "label": "A coworker takes credit for your idea in a meeting. What do you do?"
+        },
+        {
+          "id": "q5",
+          "label": "Someone you care about says something that hurts your feelings. How do you respond?"
+        },
+        {
+          "id": "q6",
+          "label": "You disagree with a group decision. What's your move?"
+        }
+      ],
+      "exerciseOptions": [
+        "I let it go and don't say anything — it's not worth the conflict (Passive)",
+        "I tell them directly that it's not okay and they need to change (Aggressive)",
+        "I don't say anything directly but make comments or act cold (Passive-Aggressive)",
+        "I bring it up calmly and explain how I feel while asking for their perspective (Assertive)"
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Your Communication Fingerprint",
+      "content": "Your results aren't a label — they're a starting point. Noticing your default style is what makes it possible to choose a different one when it matters.",
+      "reflectPrompts": [
+        {
+          "id": "dominant-style",
+          "prompt": "Which communication style showed up most for you? Does it change depending on who you're talking to?",
+          "type": "text"
+        },
+        {
+          "id": "cost",
+          "prompt": "What has your default style cost you in a relationship — what hasn't been said, or what's been said poorly?",
+          "type": "text"
+        },
+        {
+          "id": "assertive-comfort",
+          "prompt": "How comfortable do you feel communicating assertively right now?",
+          "type": "scale"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Practice in a Low-Stakes Moment",
+      "content": "You don't have to overhaul how you communicate overnight. Start with one small, low-pressure moment to practice being more intentional.",
+      "commitPrompt": "Choose one way to practice assertive communication this week.",
+      "commitOptions": [
+        "I'll express a small preference I'd normally keep to myself (like where to eat or what to watch)",
+        "I'll notice one moment where I slip into passive, aggressive, or passive-aggressive mode and name it",
+        "I'll ask someone 'How did that land for you?' after sharing something important"
+      ]
+    }
+  ]
+}

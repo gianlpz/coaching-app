@@ -1,0 +1,63 @@
+{
+  "title": "What Needs to Change",
+  "description": "Use a decisional balance exercise to honestly weigh the pros and cons of staying where you are versus making a change.",
+  "order": 3,
+  "estimatedMinutes": 7,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Tug of War Inside You",
+      "content": "If you've ever felt pulled in two directions about your career \u2014 part of you wanting to stay, part wanting to go \u2014 that's not weakness. That's your brain doing exactly what it's designed to do: weighing risk and reward. The problem is, most of us try to resolve this debate in our heads, where it just spins in circles. Let's get it on paper."
+    },
+    {
+      "type": "learn",
+      "title": "Decisional Balance: Making the Invisible Visible",
+      "content": "Motivational Interviewing uses a tool called a decisional balance to help people work through ambivalence \u2014 that stuck feeling when you want to change and want to stay at the same time. Here's the insight: ambivalence isn't a problem to overcome. It's information to work with. Every choice has benefits and costs on both sides. When you list them out honestly, something shifts. You stop spinning and start seeing. Some people discover their reasons to stay are stronger than they thought. Others realize their reasons to change have been quietly building for years. Both outcomes are valuable because either way, you move from confusion to clarity.",
+      "keyTakeaway": "Ambivalence about career change isn't a problem to fix \u2014 it's information to explore, and putting it on paper transforms confusion into clarity."
+    },
+    {
+      "type": "do",
+      "title": "Your Decisional Balance",
+      "content": "Go through the statements below and check every one that feels true for you right now. Be radically honest \u2014 this is for your eyes only. There are no right answers, and checking items on both sides is completely normal.",
+      "exerciseType": "checklist",
+      "exercisePrompt": "Check every statement that resonates with how you honestly feel about your career right now.",
+      "exerciseItems": [
+        { "id": "stay-comfort", "label": "Staying: I know what to expect, and there's comfort in that" },
+        { "id": "stay-financial", "label": "Staying: My financial situation depends on this income right now" },
+        { "id": "stay-relationships", "label": "Staying: I have relationships and connections here I value" },
+        { "id": "stay-progress", "label": "Staying: I've invested a lot of time and effort in getting here" },
+        { "id": "stay-potential", "label": "Staying: Things could still improve if I give it more time" },
+        { "id": "change-growth", "label": "Changing: I've stopped growing and learning where I am" },
+        { "id": "change-values", "label": "Changing: My work doesn't reflect what I really value" },
+        { "id": "change-energy", "label": "Changing: I feel drained more often than energized" },
+        { "id": "change-calling", "label": "Changing: Something else keeps pulling at me and I can't ignore it" },
+        { "id": "change-health", "label": "Changing: My current situation is affecting my health or relationships" },
+        { "id": "change-strengths", "label": "Changing: I rarely get to use my real strengths" },
+        { "id": "stay-fear", "label": "Staying: I'm afraid of making the wrong move" },
+        { "id": "change-regret", "label": "Changing: I don't want to look back and wonder 'what if'" },
+        { "id": "stay-timing", "label": "Staying: Now isn't the right time for a big change" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Listening to the Balance",
+      "content": "Look at what you checked. This isn't a scorecard where more checks on one side \"wins.\" Some items carry more weight than others. What matters is what stands out to you.",
+      "reflectPrompts": [
+        { "id": "weight", "prompt": "Which single item on this list carries the most weight for you, and why?", "type": "text" },
+        { "id": "fear-vs-values", "prompt": "How much of your reason to stay is based on fear versus genuine satisfaction?", "type": "scale" },
+        { "id": "lean", "prompt": "Right now, in this moment, which direction do you lean \u2014 and what does that tell you?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Honor Your Ambivalence",
+      "content": "Wherever you are in this process is exactly where you need to be. You don't have to decide anything today. But you can take one step that moves you from thinking to exploring.",
+      "commitPrompt": "Choose one step to move from thinking to exploring:",
+      "commitOptions": [
+        "Write a journal entry about what my ideal workday would look like one year from now",
+        "Have an honest conversation with someone I trust about where I'm at with my career",
+        "Research one alternative career path that interests me, just to learn more"
+      ]
+    }
+  ]
+}

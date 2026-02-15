@@ -1,0 +1,86 @@
+{
+  "title": "Module Reflection: Connecting Your Style to Your Patterns",
+  "description": "Tie together what you've learned about your relationship history, attachment style, and thought patterns into one clear picture.",
+  "order": 4,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "Zoom Out",
+      "content": "You've done real work in this module — you've looked at your history, named your attachment style, and started catching your thought patterns. Now it's time to zoom out and see how all three connect. The picture that emerges might be the most useful thing you've learned about yourself in a long time."
+    },
+    {
+      "type": "learn",
+      "title": "How It All Fits Together",
+      "content": "Your relationship history shaped your attachment style. Your attachment style influences which cognitive distortions show up most. And those distortions drive the reactions that create repeating cycles in your relationships. For example, someone with an anxious attachment style might be more prone to mind-reading and catastrophizing — because their early experiences taught them that closeness is unreliable, so they're always scanning for danger. Someone with an avoidant style might lean toward minimizing or dismissing their own emotions, because they learned that needing people leads to disappointment. When you can see this chain clearly — history to style to thoughts to behavior — you gain something powerful: a choice point.",
+      "keyTakeaway": "Your history shaped your attachment style, your style fuels specific thought distortions, and those distortions drive your relationship patterns — but seeing the chain gives you the power to interrupt it."
+    },
+    {
+      "type": "do",
+      "title": "Map Your Pattern Chain",
+      "content": "Using what you've learned across this module, map out your personal pattern chain. Be specific and draw from your earlier exercises.",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Fill in each link in your personal pattern chain.",
+      "exerciseItems": [
+        {
+          "id": "history-lesson",
+          "label": "My history taught me...",
+          "description": "What core lesson about relationships did you absorb early on?"
+        },
+        {
+          "id": "attachment-tendency",
+          "label": "So my attachment tendency is...",
+          "description": "Which style(s) showed up for you, and how does it connect to that lesson?"
+        },
+        {
+          "id": "thought-pattern",
+          "label": "Which makes me prone to thinking...",
+          "description": "What's the distortion or automatic thought that shows up most?"
+        },
+        {
+          "id": "behavior-result",
+          "label": "And that leads me to...",
+          "description": "What do you typically do (or avoid doing) as a result?"
+        },
+        {
+          "id": "choice-point",
+          "label": "But now I can choose to...",
+          "description": "What's one new option you see now that you can see the chain?"
+        }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Taking Stock",
+      "content": "You've done something meaningful here. Seeing your patterns isn't always comfortable, but it's the foundation for building relationships that actually feel good.",
+      "reflectPrompts": [
+        {
+          "id": "clarity",
+          "prompt": "How much clearer do your relationship patterns feel after this module?",
+          "type": "scale"
+        },
+        {
+          "id": "biggest-insight",
+          "prompt": "What's the single biggest insight you're taking away from this module?",
+          "type": "text"
+        },
+        {
+          "id": "self-kindness",
+          "prompt": "What would you say to a friend who just discovered these same patterns about themselves?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Your Bridge to Module 2",
+      "content": "Understanding your patterns is the foundation. In the next module, you'll learn communication skills to start reshaping those patterns in real conversations. For now, choose one thing to practice.",
+      "commitPrompt": "What's one thing you'll carry forward from this module into your daily life?",
+      "commitOptions": [
+        "I'll notice when my attachment style is driving my reactions and name it silently",
+        "I'll do one thought record per week to keep building my awareness",
+        "I'll be more compassionate with myself when old patterns show up — they made sense once, even if they don't serve me now"
+      ]
+    }
+  ]
+}

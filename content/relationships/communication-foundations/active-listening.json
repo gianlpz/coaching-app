@@ -1,0 +1,101 @@
+{
+  "title": "Active Listening",
+  "description": "Learn and practice the three levels of listening that transform surface-level conversations into real connection.",
+  "order": 2,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "Are You Really Listening?",
+      "content": "Think about the last meaningful conversation you had. Were you fully present — or were you partly rehearsing what you'd say next, checking your phone, or waiting for your turn to talk? Most of us are better talkers than listeners, and our relationships pay the price."
+    },
+    {
+      "type": "learn",
+      "title": "The Three Levels of Listening",
+      "content": "Not all listening is created equal. Level 1 is Internal Listening — you hear the words, but you're focused on your own thoughts, reactions, and what you want to say next. This is where most people operate most of the time. Level 2 is Focused Listening — your full attention is on the other person. You're tracking their words, tone, and emotions. You're curious about their experience, not just waiting to respond. Level 3 is Global Listening — you pick up on everything: what's said, what's not said, body language, energy shifts, and the emotions underneath the words. This is the level that makes people feel truly seen. The Gottman Method calls this \"turning toward\" your partner — and it's one of the most powerful predictors of relationship success.",
+      "keyTakeaway": "Moving from Level 1 (listening to respond) to Level 2 and 3 (listening to understand) is one of the simplest and most powerful relationship upgrades you can make."
+    },
+    {
+      "type": "do",
+      "title": "Listening Level Checklist",
+      "content": "Think about a recent important conversation. Check off which listening behaviors you practiced — and be honest about which ones you skipped.",
+      "exerciseType": "checklist",
+      "exercisePrompt": "Check each behavior you genuinely practiced during a recent meaningful conversation.",
+      "exerciseItems": [
+        {
+          "id": "eye-contact",
+          "label": "I maintained comfortable eye contact",
+          "description": "Level 2: Focused on the person, not your phone or surroundings"
+        },
+        {
+          "id": "no-interrupting",
+          "label": "I let them finish before responding",
+          "description": "Level 2: Resisting the urge to jump in with your own story or advice"
+        },
+        {
+          "id": "paraphrased",
+          "label": "I reflected back what I heard",
+          "description": "Level 2: 'So what you're saying is...' to confirm understanding"
+        },
+        {
+          "id": "asked-follow-up",
+          "label": "I asked a genuine follow-up question",
+          "description": "Level 2: Curious about their experience, not redirecting to yours"
+        },
+        {
+          "id": "noticed-emotion",
+          "label": "I noticed their emotional state",
+          "description": "Level 3: Picking up on how they felt, not just what they said"
+        },
+        {
+          "id": "named-emotion",
+          "label": "I acknowledged their emotion out loud",
+          "description": "Level 3: 'That sounds really frustrating' or 'I can see this means a lot to you'"
+        },
+        {
+          "id": "noticed-unsaid",
+          "label": "I noticed something they didn't say",
+          "description": "Level 3: Sensing what was underneath the surface"
+        },
+        {
+          "id": "stayed-present",
+          "label": "I stayed present even when it was uncomfortable",
+          "description": "Level 3: Sitting with silence or difficult emotions without rushing to fix"
+        }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Where You Are and Where You're Going",
+      "content": "There's no shame in being a Level 1 listener most of the time — that's the human default. What matters is learning to shift to Level 2 and 3 when the moment calls for it.",
+      "reflectPrompts": [
+        {
+          "id": "current-level",
+          "prompt": "Which level of listening do you spend most of your time in? What keeps you there?",
+          "type": "text"
+        },
+        {
+          "id": "impact",
+          "prompt": "Think of a time someone truly listened to you at Level 2 or 3. What did that feel like?",
+          "type": "text"
+        },
+        {
+          "id": "difficulty",
+          "prompt": "How hard is it for you to listen without planning your response?",
+          "type": "scale"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "One Conversation, One Level Up",
+      "content": "Deep listening is a skill, not a talent — it gets better with practice. Choose one small way to level up your listening this week.",
+      "commitPrompt": "Pick one listening practice to try in a real conversation this week.",
+      "commitOptions": [
+        "In one conversation, I'll focus only on understanding — no advice, no fixing, just listening",
+        "I'll practice reflecting back what I hear: 'It sounds like you're saying...'",
+        "I'll put my phone completely away during one important conversation and notice the difference"
+      ]
+    }
+  ]
+}

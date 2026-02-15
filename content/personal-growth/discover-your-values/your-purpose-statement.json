@@ -1,0 +1,53 @@
+{
+  "title": "Your Purpose Statement",
+  "description": "Pull together what you've learned about your values into a single, personal purpose statement. This isn't about finding the 'right' answer — it's about drafting a first version that feels true.",
+  "order": 3,
+  "estimatedMinutes": 7,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "One Sentence That Changes Everything",
+      "content": "Imagine you had a personal compass — one sentence that could guide your decisions when life gets noisy. Not a corporate mission statement, not an inspirational quote from someone else. Just a clear, honest line about what you're here to do. Today, you're going to write your first draft of that sentence."
+    },
+    {
+      "type": "learn",
+      "title": "Purpose Is a Draft, Not a Decree",
+      "content": "A lot of people freeze when they hear the word 'purpose' because it sounds permanent and grand. But your purpose statement is just a working draft — a snapshot of what matters to you right now. It will evolve as you do, and that's the point. A good purpose statement usually touches on two things: what you value most, and how you want to show up in the world. It doesn't need to be poetic. It needs to be honest. Think of it as a personal north star — close enough to guide you, far enough away to keep pulling you forward.",
+      "keyTakeaway": "Your purpose statement is a living draft that captures what matters to you and how you want to show up."
+    },
+    {
+      "type": "do",
+      "title": "Draft Your Purpose Statement",
+      "content": "Use the prompts below to warm up, then write one sentence that captures your sense of purpose. Don't overthink it — you can always revise later. A helpful formula: 'I want to live a life where I [value/quality] by [how you show up].' For example: 'I want to live a life where I keep growing and help others feel seen.' or 'I want to live a life grounded in curiosity, kindness, and creative energy.'",
+      "exerciseType": "freeform",
+      "exercisePrompt": "First, answer the warm-up questions. Then write your one-sentence purpose statement.",
+      "exerciseItems": [
+        { "id": "warmup1", "label": "What do you want more of in your life?" },
+        { "id": "warmup2", "label": "How do you want people to experience you?" },
+        { "id": "warmup3", "label": "What would you do even if nobody noticed?" },
+        { "id": "purpose", "label": "My purpose statement (one sentence)" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Sit With It",
+      "content": "Read your purpose statement slowly. Let it land. It doesn't have to feel perfect — it just has to feel close.",
+      "reflectPrompts": [
+        { "id": "resonance", "prompt": "How much does this statement resonate with you right now?", "type": "scale" },
+        { "id": "missing", "prompt": "Is there anything important that feels missing from it?", "type": "text" },
+        { "id": "emotion", "prompt": "What emotion comes up when you read it?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Carry It With You",
+      "content": "Your purpose statement is a seed. Water it by keeping it visible and letting it inform one small decision today.",
+      "commitPrompt": "Today, I'll keep my purpose statement close by...",
+      "commitOptions": [
+        "Writing it on a sticky note and putting it where I'll see it",
+        "Setting it as a reminder on my phone for tomorrow morning",
+        "Sharing it with someone I trust and asking what they think"
+      ]
+    }
+  ]
+}

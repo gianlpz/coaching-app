@@ -1,0 +1,48 @@
+{
+  "title": "Module Reflection: Your Current Reality",
+  "description": "Synthesize everything you've discovered about where you are now into a clear career statement that can guide your next steps.",
+  "order": 4,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "You've Done the Hard Part",
+      "content": "Most people spend years feeling vaguely dissatisfied without ever stopping to actually examine what's going on. You just did that work in three lessons. You rated your satisfaction, found your bright spots, and faced the tug of war honestly. Now let's turn all of that into something you can actually use."
+    },
+    {
+      "type": "learn",
+      "title": "From Assessment to Action",
+      "content": "In the GROW coaching model, the R \u2014 Reality \u2014 is where most of the breakthroughs happen. That's because most people skip it. They jump from wanting something different (the Goal) straight to What should I do? (the Will). But when you truly understand your current reality, the right options often become obvious. Your reality isn't just about what's wrong. It includes what's working, what you've learned about yourself, and what you're genuinely ready for. A strong reality check combines honesty with self-compassion. You're not behind. You're not broken. You're a person gaining clarity \u2014 and clarity is the precondition for meaningful change.",
+      "keyTakeaway": "A thorough, honest assessment of your current reality doesn't just identify problems \u2014 it reveals the exact leverage points where small changes create the biggest impact."
+    },
+    {
+      "type": "do",
+      "title": "Write Your Career Reality Statement",
+      "content": "Bring together everything from this module into one clear statement. This isn't a resume summary or LinkedIn headline \u2014 it's an honest, private assessment of where you stand. Use this template as a starting point, but write it in your own words: \"Right now in my career, I feel [overall feeling]. The areas that are working well are [bright spots]. The areas that need attention are [gaps]. I'm currently leaning toward [staying/exploring change/unsure] because [reason]. The one thing I know for sure is [certainty].\"",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Write your career reality statement. Include: how you feel overall, what's working, what needs attention, which direction you're leaning, and one thing you know for sure.",
+      "exerciseItems": []
+    },
+    {
+      "type": "reflect",
+      "title": "Checking In With Yourself",
+      "content": "You've been doing deep work. Before you move on, take a moment to notice how you feel after going through this process.",
+      "reflectPrompts": [
+        { "id": "feeling", "prompt": "How do you feel after completing this assessment? More clear? More anxious? Both?", "type": "text" },
+        { "id": "readiness", "prompt": "How ready do you feel to take a next step in your career, whatever that step might be?", "type": "scale" },
+        { "id": "one-truth", "prompt": "If you had to summarize everything you've learned in these two modules in one sentence, what would it be?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Your Next Move",
+      "content": "You now have two powerful tools: self-knowledge (your values and strengths) and situational awareness (your current reality). The question isn't \"What should I do with my career?\" It's \"What's one step I can take this week that honors both?\"",
+      "commitPrompt": "Choose one action to carry your momentum forward:",
+      "commitOptions": [
+        "Revisit my values-strengths statement and my reality statement side by side to look for connections",
+        "Share one insight from this process with someone who supports me",
+        "Set a 30-minute calendar reminder this week to explore my next career step"
+      ]
+    }
+  ]
+}

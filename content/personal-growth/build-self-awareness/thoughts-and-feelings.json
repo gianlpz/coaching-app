@@ -1,0 +1,55 @@
+{
+  "title": "Thoughts and Feelings",
+  "description": "Learn how thoughts, feelings, and behaviors are connected through the CBT cycle. Practice noticing this pattern in your own life with a simple thought record exercise.",
+  "order": 1,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Hidden Chain Reaction",
+      "content": "Something happens. You feel a wave of frustration, anxiety, or sadness — and before you know it, you've snapped at someone, scrolled for an hour, or shut down entirely. It feels automatic. But there's actually a pattern running underneath, and once you see it, you can start to change it."
+    },
+    {
+      "type": "learn",
+      "title": "The Thought-Feeling-Behavior Cycle",
+      "content": "Cognitive Behavioral Therapy (CBT) is built on a powerful idea: it's not events themselves that upset us, but the meaning we make of them. Here's how it works. Something happens (a situation). You have a thought about it — often so fast you barely notice. That thought triggers a feeling, and that feeling drives a behavior. For example: your friend cancels plans. You think 'they don't really care about me.' You feel hurt and lonely. You pull away and stop reaching out. The good news is that this cycle works in every direction. Change the thought, and the feeling shifts. Change the behavior, and new thoughts follow. The first step is simply noticing the cycle in action.",
+      "keyTakeaway": "Thoughts, feelings, and behaviors form a cycle — and noticing the pattern is the first step to changing it."
+    },
+    {
+      "type": "do",
+      "title": "Your First Thought Record",
+      "content": "Think of a recent moment when you felt a strong emotion — stress, frustration, sadness, or even joy. Walk through the cycle by checking off each part as you identify it. Take your time. This is like building a new muscle.",
+      "exerciseType": "checklist",
+      "exercisePrompt": "Recall a recent emotional moment and identify each part of the cycle.",
+      "exerciseItems": [
+        { "id": "situation", "label": "I identified the situation", "description": "What happened? Where were you? Who was involved?" },
+        { "id": "thought", "label": "I noticed the thought", "description": "What went through my mind? What story did I tell myself?" },
+        { "id": "feeling", "label": "I named the feeling", "description": "What emotion came up? (e.g., anxious, frustrated, sad, relieved)" },
+        { "id": "body", "label": "I noticed a body sensation", "description": "Did I feel tension, heaviness, heat, or restlessness anywhere?" },
+        { "id": "behavior", "label": "I identified my behavior", "description": "What did I do (or want to do) in response?" },
+        { "id": "connection", "label": "I see how they're connected", "description": "Can I trace the thread from thought to feeling to behavior?" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "What Did You Discover?",
+      "content": "There's no judgment here — you're learning to observe your own mind, which is one of the most valuable skills you can build.",
+      "reflectPrompts": [
+        { "id": "awareness", "prompt": "How easy or hard was it to identify each part of the cycle?", "type": "text" },
+        { "id": "thought-speed", "prompt": "Did you notice how fast the thought happened — almost before you were aware of it?", "type": "text" },
+        { "id": "self-awareness", "prompt": "How aware would you say you usually are of your thought-feeling-behavior patterns?", "type": "scale" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Catch One Cycle Today",
+      "content": "You don't need to change anything yet. Just practice catching the cycle once today — notice a thought, name the feeling, and see the behavior that follows.",
+      "commitPrompt": "Today, when I notice a strong feeling, I'll pause and try to...",
+      "commitOptions": [
+        "Ask myself: what thought just went through my mind?",
+        "Name the emotion out loud or in my head (e.g., 'that's anxiety')",
+        "Write a quick 3-line thought record in my notes app"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Values vs. Goals",
+  "description": "Learn the difference between values and goals, then rewrite your goals as value-aligned directions. This shift changes how you relate to success and failure.",
+  "order": 2,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Finish Line Problem",
+      "content": "Have you ever achieved a goal and felt... empty? You got the promotion, hit the number, finished the thing — and the happiness faded faster than you expected. That's because goals have finish lines, but the things that make life meaningful don't. Let's explore why."
+    },
+    {
+      "type": "learn",
+      "title": "Goals End, Values Continue",
+      "content": "A goal is something you can complete: run a marathon, get a degree, save $10,000. A value is a quality of action you can practice forever: being adventurous, showing up for your health, or growing as a person. Goals are useful — they give you structure and milestones. But when you attach your sense of meaning only to goals, you ride an emotional roller coaster of achieving and then feeling lost. The ACT approach is to let your values guide which goals you set, so that even the journey toward a goal feels meaningful.",
+      "keyTakeaway": "Goals are milestones along a value-driven path — not the path itself."
+    },
+    {
+      "type": "do",
+      "title": "Rewrite Your Goals as Directions",
+      "content": "Think of two or three goals you're currently working toward (or want to). For each one, write the deeper value underneath it — the direction that goal is really pointing you in. For example: 'Get promoted at work' might become 'Move toward growth and mastery in my career.' 'Lose 15 pounds' might become 'Treat my body with care and energy.'",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Write 2-3 goals you have right now, and underneath each one, write the value or direction it's really about.",
+      "exerciseItems": [
+        { "id": "goal1", "label": "Goal 1 → Value Direction" },
+        { "id": "goal2", "label": "Goal 2 → Value Direction" },
+        { "id": "goal3", "label": "Goal 3 → Value Direction (optional)" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Feel the Shift",
+      "content": "Read your value-aligned directions out loud if you can. Notice how it feels compared to the original goal statement.",
+      "reflectPrompts": [
+        { "id": "feel-different", "prompt": "Does framing your goal as a direction change how it feels? How so?", "type": "text" },
+        { "id": "pressure", "prompt": "How much pressure do you feel around your goals right now?", "type": "scale" },
+        { "id": "direction-relief", "prompt": "Does thinking in terms of directions relieve any of that pressure?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Lead with the Value Today",
+      "content": "Pick one of the value directions you wrote. Instead of working on the goal today, do one thing that honors the value behind it — even if it doesn't move the scoreboard.",
+      "commitPrompt": "Today, I'll honor the value behind my goal by...",
+      "commitOptions": [
+        "Doing something I enjoy in that area, with no performance pressure",
+        "Telling someone about the direction I want to move in",
+        "Noticing one moment today where I'm already living that value"
+      ]
+    }
+  ]
+}

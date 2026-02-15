@@ -1,0 +1,53 @@
+{
+  "title": "Module Reflection: Self-Awareness",
+  "description": "Review your self-awareness journey this module. Track how your awareness has grown, celebrate your progress, and commit to keeping the practice alive.",
+  "order": 4,
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "A Week of Paying Attention",
+      "content": "This module asked you to do something deceptively simple: pay attention to yourself. You explored the thought-feeling-behavior cycle, met your inner critic, and practiced mindful check-ins. That might not sound dramatic, but self-awareness is the foundation every other skill is built on. Let's see what you've noticed."
+    },
+    {
+      "type": "learn",
+      "title": "Awareness Is the First Domino",
+      "content": "In both CBT and mindfulness traditions, self-awareness is considered the gateway skill. You can't change a pattern you don't see. You can't respond differently to a feeling you haven't named. This module gave you three tools: the thought record for catching cognitive patterns, defusion for creating distance from your inner critic, and body scans for tuning into physical and emotional signals. None of these require perfection. They only require practice. The more often you use them, the more automatic they become — until noticing your thoughts and feelings is just something you do, naturally.",
+      "keyTakeaway": "Self-awareness is a skill that strengthens with practice, and it's the foundation for lasting personal change."
+    },
+    {
+      "type": "do",
+      "title": "Track Your Awareness This Week",
+      "content": "Think about the past week — or however long you spent on this module. Rate your experience with each of the practices you learned. Be honest; lower scores are just as useful as high ones.",
+      "exerciseType": "scale",
+      "exercisePrompt": "Rate each practice from 1 (didn't try / very difficult) to 10 (used regularly / felt natural).",
+      "exerciseItems": [
+        { "id": "thought-record", "label": "Thought Records", "description": "How often did you catch the thought-feeling-behavior cycle?" },
+        { "id": "inner-critic", "label": "Inner Critic Defusion", "description": "How often did you notice and name your inner critic?" },
+        { "id": "check-ins", "label": "Mindful Check-Ins", "description": "How often did you pause for a body scan or emotion-naming moment?" },
+        { "id": "overall-awareness", "label": "Overall Self-Awareness", "description": "How much more aware do you feel compared to before this module?" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "What's Different Now?",
+      "content": "Even small shifts count. Maybe you caught a thought one time you wouldn't have before, or noticed tension in your shoulders before it became a headache. That's growth.",
+      "reflectPrompts": [
+        { "id": "moment", "prompt": "Describe one specific moment this week where your self-awareness made a difference.", "type": "text" },
+        { "id": "tool-preference", "prompt": "Which of the three practices (thought records, defusion, or check-ins) felt most natural to you?", "type": "text" },
+        { "id": "growth", "prompt": "How much personal growth do you feel you've experienced in this module?", "type": "scale" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Keep the Practice Alive",
+      "content": "Self-awareness isn't a one-time lesson — it's an ongoing practice. Choose one tool from this module to carry with you into the coming week.",
+      "commitPrompt": "Moving forward, the self-awareness practice I'll keep using is...",
+      "commitOptions": [
+        "A daily 2-minute mindful check-in at a set time",
+        "Catching my inner critic by name at least once a day",
+        "Writing a quick thought record whenever I feel a strong emotion"
+      ]
+    }
+  ]
+}

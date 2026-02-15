@@ -1,0 +1,54 @@
+{
+  "title": "Your Inner Critic",
+  "description": "Meet the voice inside that judges, doubts, and criticizes you. Give it a name, notice its patterns, and start building a new relationship with it — one where it doesn't run the show.",
+  "order": 2,
+  "estimatedMinutes": 7,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Voice That Never Shuts Up",
+      "content": "You know that voice. The one that says you're not good enough, smart enough, or far enough along. It chimes in after a mistake, before a risk, and sometimes just when you're trying to rest. Everyone has an inner critic. The problem isn't that it exists — it's that most of us think it's telling the truth."
+    },
+    {
+      "type": "learn",
+      "title": "Defusing from Your Inner Critic",
+      "content": "In ACT, the inner critic is understood as a pattern of thoughts your mind produces — not a reflection of reality. Your mind evolved to spot threats, and sometimes it treats your self-worth like a survival problem. The technique of 'cognitive defusion' means creating space between you and your thoughts. Instead of 'I'm a failure,' you notice: 'I'm having the thought that I'm a failure.' That tiny shift is enormous. It doesn't make the thought go away — it just means you don't have to believe it or obey it. One powerful defusion technique is to give your inner critic a name or character. When you externalize it, it loses some of its authority. It becomes a voice you can hear without being controlled by.",
+      "keyTakeaway": "Your inner critic is a pattern of thoughts, not the truth — and naming it helps you stop being controlled by it."
+    },
+    {
+      "type": "do",
+      "title": "Name Your Inner Critic",
+      "content": "Let's get to know this voice. Think about the kinds of things your inner critic typically says, when it tends to show up, and what it sounds like. Then give it a name or character — something that makes it feel separate from the real you. It can be funny, serious, or anything that fits.",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Answer each prompt to build a profile of your inner critic.",
+      "exerciseItems": [
+        { "id": "phrases", "label": "What does your inner critic usually say?", "description": "Write 2-3 of its go-to phrases (e.g., 'You're going to mess this up')" },
+        { "id": "triggers", "label": "When does it get loudest?", "description": "Situations, times of day, or triggers that bring it out" },
+        { "id": "tone", "label": "What does it sound like?", "description": "Harsh? Disappointed? Sarcastic? Like a specific person?" },
+        { "id": "name", "label": "Give it a name or character", "description": "e.g., 'The Judge,' 'Worry Wendy,' 'Coach Worst-Case'" },
+        { "id": "intention", "label": "What might it be trying to protect you from?", "description": "Often the critic is a misguided attempt to keep you safe" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Creating Distance",
+      "content": "Now that you've described and named your critic, notice if it feels even slightly different. You're not trying to get rid of it — just to stop fusing with it.",
+      "reflectPrompts": [
+        { "id": "distance", "prompt": "Does naming your inner critic make it feel less powerful? How so?", "type": "text" },
+        { "id": "frequency", "prompt": "How often does your inner critic show up in a typical day?", "type": "scale" },
+        { "id": "compassion", "prompt": "Can you see any way your critic has been trying to help you, even if it's not helpful?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Catch the Critic in the Wild",
+      "content": "Today, when you hear that familiar critical voice, practice saying (out loud or silently): 'Oh, there's [name] again.' Don't fight it. Just notice it, name it, and gently come back to what you were doing.",
+      "commitPrompt": "The next time my inner critic speaks up, I'll...",
+      "commitOptions": [
+        "Say 'Thanks for the input, [name]' and carry on with my day",
+        "Write down what it said and ask myself: is this fact or opinion?",
+        "Take one slow breath and remind myself: thoughts are not commands"
+      ]
+    }
+  ]
+}

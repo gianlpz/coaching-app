@@ -1,0 +1,64 @@
+{
+  "title": "Strengths Discovery",
+  "description": "Identify your natural character strengths \u2014 the qualities that feel effortless and energizing when you use them.",
+  "order": 2,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "You're Already Good at Something",
+      "content": "Think about the last time you were so absorbed in something that you lost track of time. That flow state wasn't random \u2014 you were using one of your core strengths. The tricky part is that strengths feel so natural to us that we often don't even notice them."
+    },
+    {
+      "type": "learn",
+      "title": "Character Strengths: Your Built-In Superpowers",
+      "content": "Positive psychology research has identified 24 universal character strengths that all humans share in different combinations. Unlike skills you learn, character strengths are the natural capacities that energize you when you use them. You might be great at spreadsheets, but if it drains you, that's a skill \u2014 not a strength. True strengths meet three criteria: they feel authentic (\"this is the real me\"), they feel energizing (not depleting), and you learn quickly when you use them. Studies show that people who use their top strengths at work are six times more likely to be engaged and three times more likely to report an excellent quality of life.",
+      "keyTakeaway": "A real strength isn't just something you're good at \u2014 it's something that feels natural, energizes you, and makes you feel like the most authentic version of yourself."
+    },
+    {
+      "type": "do",
+      "title": "Spot Your Strengths",
+      "content": "Below is a simplified list of character strengths drawn from the VIA Classification. Check every strength that resonates with you \u2014 the ones where you think, \"Yes, that's me.\" Don't overthink it. After you've checked all that apply, go back and star just your top 5.",
+      "exerciseType": "checklist",
+      "exercisePrompt": "Check all the strengths that feel natural and energizing to you, then narrow to your top 5.",
+      "exerciseItems": [
+        { "id": "curiosity", "label": "Curiosity", "description": "You love exploring new ideas, asking questions, and figuring things out" },
+        { "id": "creativity", "label": "Creativity", "description": "You naturally find original ways to approach problems and express ideas" },
+        { "id": "perseverance", "label": "Perseverance", "description": "You push through obstacles and finish what you start" },
+        { "id": "kindness", "label": "Kindness", "description": "You genuinely enjoy helping and supporting others" },
+        { "id": "leadership", "label": "Leadership", "description": "You naturally organize groups and inspire people toward a goal" },
+        { "id": "humor", "label": "Humor", "description": "You bring lightness, laughter, and playfulness to situations" },
+        { "id": "fairness", "label": "Fairness", "description": "You care deeply about justice and treating people equitably" },
+        { "id": "love-of-learning", "label": "Love of Learning", "description": "You get excited about mastering new skills and knowledge" },
+        { "id": "bravery", "label": "Bravery", "description": "You speak up and take action even when it feels uncomfortable" },
+        { "id": "gratitude", "label": "Gratitude", "description": "You easily notice and appreciate the good things in life" },
+        { "id": "teamwork", "label": "Teamwork", "description": "You thrive when collaborating and contributing to group efforts" },
+        { "id": "perspective", "label": "Perspective", "description": "People come to you for advice because you see the bigger picture" },
+        { "id": "zest", "label": "Zest", "description": "You bring energy and enthusiasm to everything you do" },
+        { "id": "social-intelligence", "label": "Social Intelligence", "description": "You read people well and navigate social situations easily" },
+        { "id": "self-regulation", "label": "Self-Regulation", "description": "You manage your emotions and impulses with discipline" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "What Your Strengths Tell You",
+      "content": "Look at the strengths you selected. These aren't just personality traits \u2014 they're clues about the kind of work that will light you up.",
+      "reflectPrompts": [
+        { "id": "pattern", "prompt": "Do you notice a pattern or theme among your top strengths? What might they have in common?", "type": "text" },
+        { "id": "use-at-work", "prompt": "How often do you get to use your top strengths in your current work?", "type": "scale" },
+        { "id": "best-moment", "prompt": "Describe a specific moment when you were using one of your top strengths and it felt amazing.", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Put a Strength to Work",
+      "content": "Research shows that intentionally using a top strength in a new way each day for just one week significantly boosts wellbeing. Let's start with today.",
+      "commitPrompt": "Choose one way to deliberately use a top strength today:",
+      "commitOptions": [
+        "Use my #1 strength in a new or different way at work today",
+        "Ask a friend or colleague what they think my greatest strength is",
+        "Write down one way I could use my top strength more in my current role"
+      ]
+    }
+  ]
+}

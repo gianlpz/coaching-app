@@ -1,0 +1,15 @@
+{
+  "slug": "life-satisfaction-wheel",
+  "title": "Life Satisfaction Wheel",
+  "description": "Rate your satisfaction across 8 key life areas to see where you stand today",
+  "dimensions": [
+    { "id": "career", "label": "Career & Work", "description": "Your job satisfaction, professional growth, and sense of purpose at work" },
+    { "id": "finances", "label": "Finances", "description": "Your financial stability, savings, and relationship with money" },
+    { "id": "health", "label": "Health & Fitness", "description": "Your physical health, energy levels, and wellness habits" },
+    { "id": "relationships", "label": "Relationships", "description": "Your romantic relationship, family bonds, and close friendships" },
+    { "id": "fun", "label": "Fun & Recreation", "description": "Your hobbies, leisure time, and activities that bring you joy" },
+    { "id": "environment", "label": "Physical Environment", "description": "Your living space, surroundings, and sense of comfort at home" },
+    { "id": "growth", "label": "Personal Growth", "description": "Your learning, self-development, and pursuit of new experiences" },
+    { "id": "contribution", "label": "Contribution", "description": "How you give back, help others, and make a positive impact" }
+  ]
+}

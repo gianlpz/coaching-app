@@ -1,0 +1,59 @@
+{
+  "title": "Your Core Values",
+  "description": "Discover the 5 career values that matter most to you by ranking what truly drives your sense of fulfillment at work.",
+  "order": 1,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "What Really Matters to You?",
+      "content": "Imagine two job offers land on your desk tomorrow. Same pay, same title \u2014 but they feel completely different. What is it about one that pulls you in? That invisible pull? Those are your values talking, and most of us have never stopped to listen."
+    },
+    {
+      "type": "learn",
+      "title": "Why Values Are Your Career Compass",
+      "content": "Values are the things that matter most to you \u2014 not what you think should matter, but what actually energizes you when it shows up in your work. Research from Acceptance and Commitment Therapy shows that when people align their actions with their values, they experience more meaning, less burnout, and greater resilience during tough times. Values aren't goals you check off. They're directions you move toward, like a compass heading. You can always take one more step toward creativity, or connection, or growth \u2014 there's no finish line. That's what makes them so powerful for career decisions.",
+      "keyTakeaway": "Values are directions you move toward, not destinations you arrive at \u2014 and clarity on yours makes every career decision easier."
+    },
+    {
+      "type": "do",
+      "title": "Rank Your Top 5 Values",
+      "content": "Below are 10 common career values. Read through all of them first, then rank just your top 5 from most important (1) to fifth most important (5). Go with your gut \u2014 there are no right answers here. If you're torn between two, ask yourself: if I could only have one of these in my next role, which would I choose?",
+      "exerciseType": "ranking",
+      "exercisePrompt": "Rank your top 5 career values from most important to least important.",
+      "exerciseItems": [
+        { "id": "autonomy", "label": "Autonomy", "description": "Freedom to make decisions and work independently" },
+        { "id": "creativity", "label": "Creativity", "description": "Opportunities to innovate, design, or build new things" },
+        { "id": "growth", "label": "Growth", "description": "Continuous learning, skill-building, and personal development" },
+        { "id": "impact", "label": "Impact", "description": "Making a meaningful difference for others or the world" },
+        { "id": "security", "label": "Security", "description": "Stable income, benefits, and predictable work environment" },
+        { "id": "connection", "label": "Connection", "description": "Strong relationships, teamwork, and sense of belonging" },
+        { "id": "recognition", "label": "Recognition", "description": "Being acknowledged and appreciated for your contributions" },
+        { "id": "challenge", "label": "Challenge", "description": "Solving hard problems and pushing your limits" },
+        { "id": "flexibility", "label": "Flexibility", "description": "Control over when, where, and how you work" },
+        { "id": "purpose", "label": "Purpose", "description": "Work that aligns with a cause or mission you believe in" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Sit With What Came Up",
+      "content": "Take a moment to look at your top 5. Sometimes our rankings surprise us \u2014 and that surprise is information worth paying attention to.",
+      "reflectPrompts": [
+        { "id": "surprise", "prompt": "Did anything about your ranking surprise you? What stood out?", "type": "text" },
+        { "id": "current-alignment", "prompt": "How well does your current work reflect your #1 value?", "type": "scale" },
+        { "id": "missing-value", "prompt": "Which of your top values feels most absent from your life right now?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "One Small Step Today",
+      "content": "Values only matter if you act on them. Pick one micro-action you can take today \u2014 even something that takes less than five minutes \u2014 to honor your top value.",
+      "commitPrompt": "Choose one small action you'll take today to move toward your #1 value:",
+      "commitOptions": [
+        "Write down my top value and put it somewhere I'll see it daily",
+        "Tell someone I trust about the value that matters most to me",
+        "Identify one moment this week when I was living this value"
+      ]
+    }
+  ]
+}

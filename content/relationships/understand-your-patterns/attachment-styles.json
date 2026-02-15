@@ -1,0 +1,91 @@
+{
+  "title": "Attachment Styles",
+  "description": "Discover your attachment style through a simplified quiz based on attachment theory research.",
+  "order": 2,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "Why You Do That Thing",
+      "content": "Ever wonder why you double-text when someone takes too long to reply? Or why you suddenly need space when things get serious? There's a name for these tendencies — and understanding yours can change every relationship you have going forward."
+    },
+    {
+      "type": "learn",
+      "title": "The Four Attachment Styles",
+      "content": "In the 1960s, researchers discovered that how caregivers responded to us as children created lasting patterns in how we approach relationships. These patterns fall into four styles: Secure (comfortable with closeness and independence), Anxious (craves closeness but worries about being left), Avoidant (values independence and feels uncomfortable with too much closeness), and Disorganized (a mix of anxious and avoidant, often from unpredictable early experiences). Most people are a blend, not a rigid category. Your style can also shift depending on the relationship and how safe you feel.",
+      "keyTakeaway": "Attachment styles are learned patterns, not personality flaws — and they can change with awareness and practice."
+    },
+    {
+      "type": "do",
+      "title": "What's Your Style?",
+      "content": "For each scenario below, choose the response that feels most like you — not what you think is \"right,\" but what you'd actually do or feel. Be honest; there are no wrong answers.",
+      "exerciseType": "multiple-choice",
+      "exercisePrompt": "Choose the response that feels most natural to you in each scenario.",
+      "exerciseItems": [
+        {
+          "id": "q1",
+          "label": "Your partner seems distant today. What's your first instinct?"
+        },
+        {
+          "id": "q2",
+          "label": "A close friend cancels plans at the last minute. How do you react?"
+        },
+        {
+          "id": "q3",
+          "label": "Someone you're dating says \"I love you\" for the first time. What do you feel?"
+        },
+        {
+          "id": "q4",
+          "label": "You had a rough day and need support. What do you do?"
+        },
+        {
+          "id": "q5",
+          "label": "A disagreement is brewing with someone close. What's your move?"
+        },
+        {
+          "id": "q6",
+          "label": "You haven't heard from a good friend in a while. What crosses your mind first?"
+        }
+      ],
+      "exerciseOptions": [
+        "I feel calm and figure we'll work it out when they're ready (Secure)",
+        "I feel anxious and want to fix it immediately — did I do something wrong? (Anxious)",
+        "I feel relieved by the space and use the time for myself (Avoidant)",
+        "I feel torn — I want to reach out but I'm also bracing for rejection (Disorganized)"
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Sitting With What You Found",
+      "content": "There's no \"best\" attachment style, and most people see bits of themselves in more than one. What matters is noticing your tendencies with kindness, not judgment.",
+      "reflectPrompts": [
+        {
+          "id": "dominant-style",
+          "prompt": "Which style showed up most in your answers? Does that feel accurate?",
+          "type": "text"
+        },
+        {
+          "id": "relationship-impact",
+          "prompt": "How do you think this style has affected a specific relationship in your life?",
+          "type": "text"
+        },
+        {
+          "id": "self-compassion",
+          "prompt": "How much compassion do you feel toward yourself after learning this?",
+          "type": "scale"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Carry This Forward",
+      "content": "Knowing your attachment style is like getting a new pair of glasses — suddenly things that were blurry start to make sense. Let's put that clarity to use.",
+      "commitPrompt": "Choose one way to use your new awareness this week.",
+      "commitOptions": [
+        "Next time I feel triggered in a relationship, I'll pause and ask: is this my attachment style talking?",
+        "I'll share what I learned about attachment styles with a friend or partner",
+        "I'll notice one situation where my style helps me and one where it holds me back"
+      ]
+    }
+  ]
+}

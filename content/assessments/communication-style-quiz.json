@@ -1,0 +1,11 @@
+{
+  "slug": "communication-style-quiz",
+  "title": "Communication Style Quiz",
+  "description": "Discover how you naturally communicate in relationships",
+  "dimensions": [
+    { "id": "assertive", "label": "Assertive", "description": "Direct, clear, and respectful expression of needs and boundaries" },
+    { "id": "passive", "label": "Passive", "description": "Tendency to avoid conflict and put others' needs first" },
+    { "id": "aggressive", "label": "Aggressive", "description": "Forceful expression that may override others' feelings" },
+    { "id": "passive-aggressive", "label": "Passive-Aggressive", "description": "Indirect expression of frustration through subtle actions" }
+  ]
+}

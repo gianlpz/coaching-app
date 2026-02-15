@@ -1,0 +1,53 @@
+{
+  "title": "Module Reflection: Values & Purpose",
+  "description": "Look back on what you discovered about your values and purpose. Rate how your purpose statement feels, notice what shifted, and set an intention for carrying this forward.",
+  "order": 4,
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "Pause and Look Back",
+      "content": "You've done real work this module — sorting your values, reframing your goals, and drafting a purpose statement. Before you move on, let's take a moment to see how far you've come. Reflection isn't extra credit. It's where the learning actually sticks."
+    },
+    {
+      "type": "learn",
+      "title": "Why Reflection Matters",
+      "content": "Research in psychology shows that reflection deepens learning more than additional practice alone. When you pause to notice what you've experienced, your brain encodes it differently — it moves from short-term awareness to lasting insight. In ACT, this is called 'contacting the present moment.' You're not analyzing yourself — you're just noticing what's here. This module asked you to explore your values, question your goals, and name your purpose. That's a lot. Giving yourself a few minutes to digest it is what turns an exercise into a real shift.",
+      "keyTakeaway": "Reflection turns experiences into lasting insights by helping your brain process what you've learned."
+    },
+    {
+      "type": "do",
+      "title": "Rate Your Purpose Statement",
+      "content": "Think about the purpose statement you drafted in the last lesson. Read it again (or recall it as best you can). Then rate how it feels across a few dimensions. There are no right answers — this is just useful data about where you are.",
+      "exerciseType": "scale",
+      "exercisePrompt": "Rate each dimension from 1 (not at all) to 10 (completely).",
+      "exerciseItems": [
+        { "id": "clarity", "label": "Clarity", "description": "How clear and understandable is your purpose statement?" },
+        { "id": "resonance", "label": "Resonance", "description": "How deeply does it resonate with who you are right now?" },
+        { "id": "motivation", "label": "Motivation", "description": "How motivated does it make you feel when you read it?" },
+        { "id": "authenticity", "label": "Authenticity", "description": "How honest and true to yourself does it feel?" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "What Shifted This Module?",
+      "content": "Think back across all four lessons. Something may have surprised you, challenged you, or quietly clicked into place.",
+      "reflectPrompts": [
+        { "id": "biggest-insight", "prompt": "What was your biggest insight or aha moment from this module?", "type": "text" },
+        { "id": "values-clarity", "prompt": "How much clearer do you feel about your personal values compared to before?", "type": "scale" },
+        { "id": "next-step", "prompt": "Is there anything from this module you want to revisit or go deeper on?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Carry Your Values Forward",
+      "content": "Knowing your values is powerful, but only if you let them guide your choices. Pick one way to keep your values visible this week.",
+      "commitPrompt": "This week, I'll stay connected to my values by...",
+      "commitOptions": [
+        "Reviewing my purpose statement at the start of each day",
+        "Making one decision this week by asking 'does this align with my values?'",
+        "Journaling for two minutes each evening about how I lived my values today"
+      ]
+    }
+  ]
+}

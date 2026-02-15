@@ -1,0 +1,86 @@
+{
+  "title": "I-Statements",
+  "description": "Learn to rewrite blame and criticism as clear, honest 'I feel... when... because...' statements that get your needs met without pushing people away.",
+  "order": 3,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Words That Start Fights",
+      "content": "\"You never listen.\" \"You always do this.\" \"You're so selfish.\" These sentences feel true in the moment — but they almost never lead to the conversation you actually want to have. There's a small shift in language that can change everything: moving from \"you\" to \"I.\""
+    },
+    {
+      "type": "learn",
+      "title": "Why 'You' Triggers Walls",
+      "content": "Gottman's research found that conversations that start with criticism or blame (what he calls a \"harsh startup\") predict the outcome of the conversation with over 90% accuracy — and that outcome is almost always negative. When someone hears \"You always...\" or \"You never...\", their brain registers it as an attack and shifts into defense mode. The conversation stops being about solving a problem and starts being about winning or surviving. I-statements flip the script by expressing your experience without attacking the other person's character. The formula is simple: \"I feel [emotion] when [specific behavior] because [why it matters to me].\" This isn't about being soft or avoiding conflict. It's about being honest in a way the other person can actually hear.",
+      "keyTakeaway": "Replacing 'you always/never' with 'I feel... when... because...' keeps conversations productive by expressing your needs without triggering the other person's defenses."
+    },
+    {
+      "type": "do",
+      "title": "Rewrite the Blame",
+      "content": "Below are common blame statements that show up in relationships. For each one, rewrite it as an I-statement using the formula: \"I feel [emotion] when [specific behavior] because [why it matters to me].\"",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Rewrite each blame statement as an I-statement. Use the format: 'I feel... when... because...'",
+      "exerciseItems": [
+        {
+          "id": "rewrite-1",
+          "label": "\"You never make time for me.\"",
+          "description": "Hint: What emotion is underneath this? Loneliness? Feeling unimportant?"
+        },
+        {
+          "id": "rewrite-2",
+          "label": "\"You always interrupt me.\"",
+          "description": "Hint: What does it feel like to be cut off? Frustration? Feeling dismissed?"
+        },
+        {
+          "id": "rewrite-3",
+          "label": "\"You don't care about my feelings.\"",
+          "description": "Hint: What specific moment made you feel uncared for?"
+        },
+        {
+          "id": "rewrite-4",
+          "label": "\"You're so controlling.\"",
+          "description": "Hint: What's the feeling underneath — suffocated? Disrespected? Untrusted?"
+        },
+        {
+          "id": "rewrite-5",
+          "label": "Now write one of your own — a blame statement you've said or thought recently, rewritten as an I-statement.",
+          "description": "This is the most important one. Make it real."
+        }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Feeling the Difference",
+      "content": "Read your rewrites out loud if you can. Notice how they feel different — both to say and to imagine hearing.",
+      "reflectPrompts": [
+        {
+          "id": "difficulty",
+          "prompt": "What was hardest about rewriting these? Identifying the emotion, the behavior, or the reason?",
+          "type": "text"
+        },
+        {
+          "id": "vulnerability",
+          "prompt": "I-statements require vulnerability — sharing how you feel instead of what the other person did wrong. How comfortable are you with that?",
+          "type": "scale"
+        },
+        {
+          "id": "prediction",
+          "prompt": "Think of a specific person. How do you think they'd respond differently if you used an I-statement instead of blame?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Use It For Real",
+      "content": "I-statements feel awkward at first. That's normal — you're rewiring a habit. The only way through the awkwardness is practice in real moments.",
+      "commitPrompt": "Choose one way to practice I-statements this week.",
+      "commitOptions": [
+        "The next time I feel frustrated with someone, I'll pause and convert my reaction into an I-statement before speaking",
+        "I'll write an I-statement about something that's been bothering me — even if I don't share it yet",
+        "I'll practice the formula with a low-stakes annoyance to build the muscle before using it for bigger things"
+      ]
+    }
+  ]
+}

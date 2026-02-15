@@ -1,0 +1,58 @@
+{
+  "title": "What Matters to You",
+  "description": "Sort eight life domains into what matters most, least, and somewhere in between. This card-sort exercise helps you see your values clearly — not what you think you should care about, but what actually lights you up.",
+  "order": 1,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Quiet Question",
+      "content": "Most of us rush through life without stopping to ask a simple question: what actually matters to me? Not what our parents wanted, not what social media celebrates — but what makes us feel alive and aligned. Today, you're going to find out."
+    },
+    {
+      "type": "learn",
+      "title": "Values Are Directions, Not Destinations",
+      "content": "In Acceptance and Commitment Therapy, values are like a compass — they point you in a direction, but you never \"arrive\" at them the way you finish a goal. You can always move toward kindness, growth, or connection. Values aren't right or wrong. They're personal. Two people can live meaningful lives with completely different value sets. The key is knowing yours so you can make choices that feel like you.",
+      "keyTakeaway": "Values are ongoing directions you travel in, not boxes you check off."
+    },
+    {
+      "type": "do",
+      "title": "Sort Your Life Domains",
+      "content": "Below are eight life domains. Drag each card into the bucket that feels right. Go with your gut — there are no wrong answers. If you're torn, notice that tension. It's useful information.",
+      "exerciseType": "card-sort",
+      "exercisePrompt": "Sort each life domain into how important it feels to you right now.",
+      "exerciseItems": [
+        { "id": "family", "label": "Family & Relationships", "description": "Close bonds with family, partner, or chosen family" },
+        { "id": "career", "label": "Career & Work", "description": "Meaningful work, professional growth, financial stability" },
+        { "id": "health", "label": "Health & Wellbeing", "description": "Physical fitness, mental health, rest, and nourishment" },
+        { "id": "creativity", "label": "Creativity & Expression", "description": "Making things, art, writing, music, or creative problem-solving" },
+        { "id": "spirituality", "label": "Spirituality & Inner Life", "description": "Faith, meditation, sense of meaning, or connection to something larger" },
+        { "id": "community", "label": "Community & Belonging", "description": "Friendships, social groups, contributing to your neighborhood or culture" },
+        { "id": "adventure", "label": "Adventure & Fun", "description": "New experiences, travel, play, spontaneity, and joy" },
+        { "id": "learning", "label": "Learning & Growth", "description": "Curiosity, education, skill-building, and personal development" }
+      ],
+      "exerciseBuckets": ["Very Important", "Somewhat Important", "Not a Priority"]
+    },
+    {
+      "type": "reflect",
+      "title": "What Do You Notice?",
+      "content": "Take a breath and look at your sorted cards. There's no perfect arrangement — just honest information about where you are right now.",
+      "reflectPrompts": [
+        { "id": "surprise", "prompt": "Was anything surprising about where you placed a card? What stood out?", "type": "text" },
+        { "id": "alignment", "prompt": "How aligned does your daily life feel with your 'Very Important' domains?", "type": "scale" },
+        { "id": "tension", "prompt": "Did you feel pulled between any two domains? Which ones?", "type": "text" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "One Small Step Toward What Matters",
+      "content": "Pick one domain from your 'Very Important' bucket. Choose one tiny action you can take today — something that takes five minutes or less — to move in that direction.",
+      "commitPrompt": "Today, I'll take five minutes to honor one of my top values by...",
+      "commitOptions": [
+        "Texting someone I love to say I'm thinking of them",
+        "Taking a short walk outside to invest in my health",
+        "Spending five minutes learning something new that excites me"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Your Relationship History",
+  "description": "A guided reflection on the key moments that shaped how you connect with others.",
+  "order": 1,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Map You Didn't Know You Had",
+      "content": "Every relationship you've ever had left a mark — not a scar, but a line on a map. Some lines led you toward people, others led you away. Today, you're going to look at that map for the first time and start to understand where those paths came from."
+    },
+    {
+      "type": "learn",
+      "title": "Why Your Past Matters",
+      "content": "Our earliest relationships create templates for how we expect love and connection to work. Researchers call these \"internal working models\" — mental blueprints built from real experiences. They shape what feels safe, what triggers anxiety, and what makes us pull away. The good news is that these blueprints aren't permanent. Once you can see them clearly, you can start to redraw them. This isn't about blaming anyone — it's about understanding yourself with compassion.",
+      "keyTakeaway": "Your past relationships created invisible blueprints that guide how you connect today, and awareness is the first step to changing them."
+    },
+    {
+      "type": "do",
+      "title": "Your Relationship Timeline",
+      "content": "Think about 3-5 relationships that shaped you — these could be with parents, friends, partners, mentors, or anyone significant. For each one, write a few sentences about what you learned about love, trust, or connection from that relationship.",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Describe 3-5 key relationships and what each one taught you about connection. Start with the earliest one you remember.",
+      "exerciseItems": [
+        {
+          "id": "relationship-1",
+          "label": "First significant relationship",
+          "description": "Who was it with, and what did it teach you about trust or love?"
+        },
+        {
+          "id": "relationship-2",
+          "label": "A relationship that felt safe",
+          "description": "What made it feel safe? What did you learn from it?"
+        },
+        {
+          "id": "relationship-3",
+          "label": "A relationship that was difficult",
+          "description": "What was hard about it? What pattern do you notice?"
+        },
+        {
+          "id": "relationship-4",
+          "label": "A relationship that surprised you",
+          "description": "What did you expect vs. what actually happened?"
+        },
+        {
+          "id": "relationship-5",
+          "label": "A current relationship that matters",
+          "description": "How do the lessons from past relationships show up here?"
+        }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Noticing the Thread",
+      "content": "Now that you've looked at your timeline, let's see if any themes emerge. There are no wrong answers here — just honest ones.",
+      "reflectPrompts": [
+        {
+          "id": "theme",
+          "prompt": "What's one theme or pattern you notice across these relationships?",
+          "type": "text"
+        },
+        {
+          "id": "surprise",
+          "prompt": "Did anything surprise you as you wrote?",
+          "type": "text"
+        },
+        {
+          "id": "awareness",
+          "prompt": "How aware were you of these patterns before today?",
+          "type": "scale"
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "One Small Step",
+      "content": "Awareness grows when we stay curious. Choose one small action to keep this reflection going.",
+      "commitPrompt": "What's one thing you can do today to stay connected to what you discovered?",
+      "commitOptions": [
+        "Share one thing I learned about myself with someone I trust",
+        "Write a short journal entry expanding on one relationship from my timeline",
+        "Notice one moment today where an old pattern shows up — just notice, no judgment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Values in Action",
+  "description": "Rate how well your core values show up in your daily work and identify where the biggest gaps are.",
+  "order": 3,
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Gap That Drains You",
+      "content": "Ever had a job that looked perfect on paper but still felt wrong? That nagging feeling usually comes from a values gap \u2014 a disconnect between what matters most to you and what your daily work actually looks like. The bigger the gap, the more drained you feel, even when everything else is going well."
+    },
+    {
+      "type": "learn",
+      "title": "Values Alignment Is a Spectrum",
+      "content": "In ACT, psychological flexibility means being able to act in line with your values even when things are hard. But before you can do that, you need to know where you stand. Think of each value like a dial \u2014 it's never fully on or fully off. You might deeply value creativity but only get to exercise it in tiny pockets of your week. That partial alignment is still something to build on. Research shows that even small increases in values alignment lead to measurable improvements in job satisfaction and resilience. You don't need a perfect match \u2014 you need to know where the gaps are so you can start closing them intentionally.",
+      "keyTakeaway": "You don't need perfect alignment to feel fulfilled \u2014 knowing where the gaps are gives you the power to close them, one small step at a time."
+    },
+    {
+      "type": "do",
+      "title": "Rate Your Values Alignment",
+      "content": "For each of the values below, rate how well it shows up in your current work or daily life right now. Be honest, not optimistic \u2014 this isn't about where you want to be, it's about where you actually are today. Use a scale of 1 (barely present) to 10 (fully alive in my work).",
+      "exerciseType": "scale",
+      "exercisePrompt": "Rate how present each value is in your current work on a scale of 1-10.",
+      "exerciseItems": [
+        { "id": "autonomy", "label": "Autonomy", "description": "I have freedom to make decisions and work in my own way" },
+        { "id": "creativity", "label": "Creativity", "description": "I regularly get to innovate, design, or build new things" },
+        { "id": "growth", "label": "Growth", "description": "I'm learning new things and developing my skills" },
+        { "id": "impact", "label": "Impact", "description": "My work makes a meaningful difference for others" },
+        { "id": "security", "label": "Security", "description": "I feel financially stable and safe in my position" },
+        { "id": "connection", "label": "Connection", "description": "I have strong, supportive relationships at work" },
+        { "id": "recognition", "label": "Recognition", "description": "My contributions are seen and appreciated" },
+        { "id": "challenge", "label": "Challenge", "description": "I'm stretched and solving interesting problems" },
+        { "id": "flexibility", "label": "Flexibility", "description": "I have control over when, where, and how I work" },
+        { "id": "purpose", "label": "Purpose", "description": "My work connects to something I believe in" }
+      ]
+    },
+    {
+      "type": "reflect",
+      "title": "Reading Your Results",
+      "content": "Look at the values you rated lowest. These are your biggest alignment gaps \u2014 and often the source of career dissatisfaction people can't quite name.",
+      "reflectPrompts": [
+        { "id": "lowest-value", "prompt": "Which value has the biggest gap between how important it is to you and how present it is in your work?", "type": "text" },
+        { "id": "highest-value", "prompt": "Which value is already well-represented? How can you protect and nurture that?", "type": "text" },
+        { "id": "overall-alignment", "prompt": "Overall, how aligned does your current work feel with your values?", "type": "scale" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Close One Gap This Week",
+      "content": "You can't overhaul your career overnight, but you can take one small action to bring a missing value into your week. Even a five-minute action counts.",
+      "commitPrompt": "Choose one action to bring your lowest-rated value more into your life this week:",
+      "commitOptions": [
+        "Schedule 30 minutes this week dedicated to my most missing value",
+        "Have a conversation with someone who models this value well",
+        "Brainstorm three small ways I could bring this value into my current role"
+      ]
+    }
+  ]
+}

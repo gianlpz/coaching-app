@@ -1,0 +1,48 @@
+{
+  "title": "What Is Working",
+  "description": "Use exception-finding to discover the bright spots in your career \u2014 the moments, roles, and conditions where things actually felt right.",
+  "order": 2,
+  "estimatedMinutes": 7,
+  "steps": [
+    {
+      "type": "hook",
+      "title": "The Power of Bright Spots",
+      "content": "When we're unhappy at work, our brain becomes a spotlight for everything that's wrong. But here's what coaching research consistently shows: the fastest path to change isn't fixing what's broken \u2014 it's finding what's already working and doing more of it. Even in the worst job, there are bright spots worth examining."
+    },
+    {
+      "type": "learn",
+      "title": "Exception-Finding: A Coaching Superpower",
+      "content": "In Motivational Interviewing and solution-focused coaching, there's a powerful technique called exception-finding. Instead of asking \"What's wrong?\" you ask \"When was it right?\" Every career has exceptions \u2014 moments when you felt engaged, capable, and alive at work. These exceptions aren't random. They contain patterns that reveal the exact conditions you need to thrive. Maybe you come alive when you're teaching someone. Maybe your best work happens in the morning with music on. Maybe you light up when you're solving a problem nobody else can crack. These clues are gold because they show you what to look for in your next move.",
+      "keyTakeaway": "The moments when work feels right aren't random \u2014 they contain patterns that reveal exactly the conditions you need to thrive."
+    },
+    {
+      "type": "do",
+      "title": "Find Your Exceptions",
+      "content": "Think back over your entire work history \u2014 including volunteering, school projects, and side hustles. Write about 2-3 specific moments when work felt genuinely good. For each one, describe what you were doing, who you were with, what the environment was like, and how it made you feel. Be as specific as possible. \"I liked my last job\" isn't enough \u2014 dig into the exact moment.",
+      "exerciseType": "freeform",
+      "exercisePrompt": "Describe 2-3 specific moments in your career when things felt right. For each moment, include: What were you doing? Who were you with? What was the environment like? How did it make you feel? What made this moment stand out?",
+      "exerciseItems": []
+    },
+    {
+      "type": "reflect",
+      "title": "Spot the Patterns",
+      "content": "Now look across the bright spots you described. The patterns hiding in them are your blueprint for career satisfaction.",
+      "reflectPrompts": [
+        { "id": "common-thread", "prompt": "What do your bright spots have in common? Is there a theme around the type of work, people, or environment?", "type": "text" },
+        { "id": "strengths-connection", "prompt": "Which of your character strengths from the previous module were you using in those moments?", "type": "text" },
+        { "id": "replicable", "prompt": "How easy or hard would it be to create more of these bright-spot conditions in your current situation?", "type": "scale" }
+      ]
+    },
+    {
+      "type": "commit",
+      "title": "Create One Bright Spot",
+      "content": "You know what works for you now. The challenge is to intentionally create more of those conditions rather than waiting for them to happen by accident.",
+      "commitPrompt": "Choose one way to create a bright-spot condition this week:",
+      "commitOptions": [
+        "Recreate one specific condition from my best work moment (environment, time of day, or type of task)",
+        "Volunteer for a task or project that matches the patterns I identified",
+        "Block 30 minutes for the type of work that made me feel most alive"
+      ]
+    }
+  ]
+}
