@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B7355"/>
+      <stop offset="100%" stop-color="#6F5B3E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="40" y1="30" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B89E8A"/>
+      <stop offset="100%" stop-color="#8A9E82"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#bg)"/>
+  <rect x="0" y="0" width="120" height="60" rx="28" fill="rgba(255,255,255,0.12)"/>
+  <g transform="translate(60,60)">
+    <circle r="32" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <path d="M0,-30 L6,-6 L30,0 L6,6 L0,30 L-6,6 L-30,0 L-6,-6 Z" fill="url(#accent)" opacity="0.9"/>
+    <path d="M0,-14 L4,0 L0,14 L-4,0 Z" fill="white" opacity="0.95"/>
+    <circle r="3" fill="white"/>
+  </g>
+  <rect x="8" y="8" width="50" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+</svg>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaching App Icon Concepts</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #1E1E1E;
+      color: #fff;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #8B7355, #B89E8A);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #999;
+      font-size: 0.875rem;
+      margin-bottom: 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .option-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8B7355;
+    }
+
+    .icon-container {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-name {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .icon-desc {
+      font-size: 0.8rem;
+      color: #999;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .previews {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4px;
+    }
+
+    .preview-box {
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .preview-dark {
+      background: #1E1E1E;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .preview-light {
+      background: #FAF8F5;
+      border: 1px solid rgba(139,115,85,0.15);
+    }
+
+    .preview-box.sm {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    .preview-box.md {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+    }
+
+    .size-labels {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .size-labels span {
+      font-size: 0.65rem;
+      color: #666;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Coaching App — Icon Concepts</h1>
+  <p class="subtitle">GlassBank glassmorphism aesthetic adapted to the warm earth-tone coaching brand</p>
+
+  <div class="grid">
+
+    <!-- OPTION 1: Glass Compass -->
+    <div class="card">
+      <span class="option-label">Option 1</span>
+      <div class="icon-container">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg1" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#8B7355"/>
+              <stop offset="100%" stop-color="#6F5B3E"/>
+            </linearGradient>
+            <linearGradient id="accent1" x1="40" y1="30" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#B89E8A"/>
+              <stop offset="100%" stop-color="#8A9E82"/>
+            </linearGradient>
+            <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+            </filter>
+          </defs>
+          <!-- Rounded square background -->
+          <rect width="120" height="120" rx="28" fill="url(#bg1)"/>
+          <!-- Glass overlay top-left -->
+          <rect x="0" y="0" width="120" height="60" rx="28" fill="rgba(255,255,255,0.12)"/>
+          <!-- Compass star / north star -->
+          <g transform="translate(60,60)">
+            <!-- Outer glow -->
+            <circle r="32" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+            <!-- Four-pointed star (compass) -->
+            <path d="M0,-30 L6,-6 L30,0 L6,6 L0,30 L-6,6 L-30,0 L-6,-6 Z" fill="url(#accent1)" opacity="0.9"/>
+            <!-- Inner diamond -->
+            <path d="M0,-14 L4,0 L0,14 L-4,0 Z" fill="white" opacity="0.95"/>
+            <!-- Center dot -->
+            <circle r="3" fill="white"/>
+          </g>
+          <!-- Subtle glass shine -->
+          <rect x="8" y="8" width="50" height="24" rx="12" fill="rgba(255,255,255,0.15)"/>
+        </svg>
+      </div>
+      <span class="icon-name">Glass Compass</span>
+      <span class="icon-desc">A guiding compass star — represents direction, coaching, and finding your path. Glassmorphism overlay with warm gradient.</span>
+      <div class="previews">
+        <div class="preview-box md preview-dark">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg1s" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B7355"/><stop offset="100%" stop-color="#6F5B3E"/></linearGradient><linearGradient id="a1s" x1="40" y1="30" x2="80" y2="90" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#B89E8A"/><stop offset="100%" stop-color="#8A9E82"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg1s)"/><rect x="0" y="0" width="120" height="60" rx="28" fill="rgba(255,255,255,0.12)"/><g transform="translate(60,60)"><path d="M0,-30 L6,-6 L30,0 L6,6 L0,30 L-6,6 L-30,0 L-6,-6 Z" fill="url(#a1s)" opacity="0.9"/><path d="M0,-14 L4,0 L0,14 L-4,0 Z" fill="white" opacity="0.95"/><circle r="3" fill="white"/></g></svg>
+        </div>
+        <div class="preview-box md preview-light">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg1l" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B7355"/><stop offset="100%" stop-color="#6F5B3E"/></linearGradient><linearGradient id="a1l" x1="40" y1="30" x2="80" y2="90" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#B89E8A"/><stop offset="100%" stop-color="#8A9E82"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg1l)"/><rect x="0" y="0" width="120" height="60" rx="28" fill="rgba(255,255,255,0.12)"/><g transform="translate(60,60)"><path d="M0,-30 L6,-6 L30,0 L6,6 L0,30 L-6,6 L-30,0 L-6,-6 Z" fill="url(#a1l)" opacity="0.9"/><path d="M0,-14 L4,0 L0,14 L-4,0 Z" fill="white" opacity="0.95"/><circle r="3" fill="white"/></g></svg>
+        </div>
+        <div class="preview-box sm preview-dark">
+          <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg1xs" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B7355"/><stop offset="100%" stop-color="#6F5B3E"/></linearGradient><linearGradient id="a1xs" x1="40" y1="30" x2="80" y2="90" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#B89E8A"/><stop offset="100%" stop-color="#8A9E82"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg1xs)"/><rect x="0" y="0" width="120" height="60" rx="28" fill="rgba(255,255,255,0.12)"/><g transform="translate(60,60)"><path d="M0,-30 L6,-6 L30,0 L6,6 L0,30 L-6,6 L-30,0 L-6,-6 Z" fill="url(#a1xs)" opacity="0.9"/><path d="M0,-14 L4,0 L0,14 L-4,0 Z" fill="white" opacity="0.95"/><circle r="3" fill="white"/></g></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 2: Rising Sprout -->
+    <div class="card">
+      <span class="option-label">Option 2</span>
+      <div class="icon-container">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg2" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#8A9E82"/>
+              <stop offset="100%" stop-color="#6B7F64"/>
+            </linearGradient>
+            <linearGradient id="leaf2" x1="50" y1="20" x2="70" y2="80" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#C8D4B8"/>
+              <stop offset="100%" stop-color="#F5F0E8"/>
+            </linearGradient>
+          </defs>
+          <!-- Background -->
+          <rect width="120" height="120" rx="28" fill="url(#bg2)"/>
+          <!-- Glass overlay -->
+          <rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.1)"/>
+          <!-- Stem -->
+          <path d="M60,95 C60,95 60,55 60,45" stroke="url(#leaf2)" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- Left leaf -->
+          <path d="M60,62 C48,58 38,45 40,32 C42,32 56,40 60,62" fill="url(#leaf2)" opacity="0.85"/>
+          <!-- Right leaf -->
+          <path d="M60,48 C72,44 82,31 80,20 C78,20 64,28 60,48" fill="white" opacity="0.7"/>
+          <!-- Small unfurling leaf at top -->
+          <path d="M60,45 C56,40 52,34 54,28 C56,30 60,38 60,45" fill="white" opacity="0.5"/>
+          <!-- Ground line -->
+          <ellipse cx="60" cy="96" rx="16" ry="3" fill="rgba(255,255,255,0.15)"/>
+          <!-- Shine -->
+          <rect x="8" y="8" width="45" height="22" rx="11" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+      </div>
+      <span class="icon-name">Rising Sprout</span>
+      <span class="icon-desc">A growing sprout — represents personal growth, new beginnings, and nurturing potential. Earthy green with glass overlay.</span>
+      <div class="previews">
+        <div class="preview-box md preview-dark">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg2s" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8A9E82"/><stop offset="100%" stop-color="#6B7F64"/></linearGradient><linearGradient id="l2s" x1="50" y1="20" x2="70" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8D4B8"/><stop offset="100%" stop-color="#F5F0E8"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg2s)"/><rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.1)"/><path d="M60,95 C60,95 60,55 60,45" stroke="url(#l2s)" stroke-width="3.5" stroke-linecap="round"/><path d="M60,62 C48,58 38,45 40,32 C42,32 56,40 60,62" fill="url(#l2s)" opacity="0.85"/><path d="M60,48 C72,44 82,31 80,20 C78,20 64,28 60,48" fill="white" opacity="0.7"/><ellipse cx="60" cy="96" rx="16" ry="3" fill="rgba(255,255,255,0.15)"/></svg>
+        </div>
+        <div class="preview-box md preview-light">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg2l" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8A9E82"/><stop offset="100%" stop-color="#6B7F64"/></linearGradient><linearGradient id="l2l" x1="50" y1="20" x2="70" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8D4B8"/><stop offset="100%" stop-color="#F5F0E8"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg2l)"/><rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.1)"/><path d="M60,95 C60,95 60,55 60,45" stroke="url(#l2l)" stroke-width="3.5" stroke-linecap="round"/><path d="M60,62 C48,58 38,45 40,32 C42,32 56,40 60,62" fill="url(#l2l)" opacity="0.85"/><path d="M60,48 C72,44 82,31 80,20 C78,20 64,28 60,48" fill="white" opacity="0.7"/><ellipse cx="60" cy="96" rx="16" ry="3" fill="rgba(255,255,255,0.15)"/></svg>
+        </div>
+        <div class="preview-box sm preview-dark">
+          <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg2xs" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8A9E82"/><stop offset="100%" stop-color="#6B7F64"/></linearGradient><linearGradient id="l2xs" x1="50" y1="20" x2="70" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8D4B8"/><stop offset="100%" stop-color="#F5F0E8"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg2xs)"/><rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.1)"/><path d="M60,95 C60,95 60,55 60,45" stroke="url(#l2xs)" stroke-width="3.5" stroke-linecap="round"/><path d="M60,62 C48,58 38,45 40,32 C42,32 56,40 60,62" fill="url(#l2xs)" opacity="0.85"/><path d="M60,48 C72,44 82,31 80,20 C78,20 64,28 60,48" fill="white" opacity="0.7"/><ellipse cx="60" cy="96" rx="16" ry="3" fill="rgba(255,255,255,0.15)"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 3: Three Rings -->
+    <div class="card">
+      <span class="option-label">Option 3</span>
+      <div class="icon-container">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg3" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#8B7355"/>
+              <stop offset="50%" stop-color="#9B8F7E"/>
+              <stop offset="100%" stop-color="#6F5B3E"/>
+            </linearGradient>
+          </defs>
+          <!-- Background -->
+          <rect width="120" height="120" rx="28" fill="url(#bg3)"/>
+          <!-- Glass overlay -->
+          <rect x="0" y="0" width="120" height="58" rx="28" fill="rgba(255,255,255,0.1)"/>
+          <!-- Three overlapping rings representing Career, Relationships, Personal Growth -->
+          <!-- Career ring (top-left) -->
+          <circle cx="50" cy="48" r="22" fill="none" stroke="#F5F0E8" stroke-width="2.5" opacity="0.7"/>
+          <circle cx="50" cy="48" r="22" fill="#9B8F7E" opacity="0.2"/>
+          <!-- Relationships ring (top-right) -->
+          <circle cx="70" cy="48" r="22" fill="none" stroke="#F8F0EB" stroke-width="2.5" opacity="0.7"/>
+          <circle cx="70" cy="48" r="22" fill="#B89E8A" opacity="0.2"/>
+          <!-- Personal Growth ring (bottom-center) -->
+          <circle cx="60" cy="68" r="22" fill="none" stroke="#F0F4ED" stroke-width="2.5" opacity="0.7"/>
+          <circle cx="60" cy="68" r="22" fill="#8A9E82" opacity="0.2"/>
+          <!-- Center intersection glow -->
+          <circle cx="60" cy="55" r="8" fill="white" opacity="0.35"/>
+          <circle cx="60" cy="55" r="4" fill="white" opacity="0.7"/>
+          <!-- Shine -->
+          <rect x="8" y="8" width="45" height="22" rx="11" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+      </div>
+      <span class="icon-name">Three Rings</span>
+      <span class="icon-desc">Three overlapping circles for Career, Relationships & Personal Growth. The glowing center represents holistic coaching balance.</span>
+      <div class="previews">
+        <div class="preview-box md preview-dark">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg3s" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B7355"/><stop offset="50%" stop-color="#9B8F7E"/><stop offset="100%" stop-color="#6F5B3E"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg3s)"/><rect x="0" y="0" width="120" height="58" rx="28" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="48" r="22" fill="#9B8F7E" opacity="0.25"/><circle cx="50" cy="48" r="22" fill="none" stroke="#F5F0E8" stroke-width="2.5" opacity="0.7"/><circle cx="70" cy="48" r="22" fill="#B89E8A" opacity="0.25"/><circle cx="70" cy="48" r="22" fill="none" stroke="#F8F0EB" stroke-width="2.5" opacity="0.7"/><circle cx="60" cy="68" r="22" fill="#8A9E82" opacity="0.25"/><circle cx="60" cy="68" r="22" fill="none" stroke="#F0F4ED" stroke-width="2.5" opacity="0.7"/><circle cx="60" cy="55" r="8" fill="white" opacity="0.35"/><circle cx="60" cy="55" r="4" fill="white" opacity="0.7"/></svg>
+        </div>
+        <div class="preview-box md preview-light">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg3l" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B7355"/><stop offset="50%" stop-color="#9B8F7E"/><stop offset="100%" stop-color="#6F5B3E"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg3l)"/><rect x="0" y="0" width="120" height="58" rx="28" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="48" r="22" fill="#9B8F7E" opacity="0.25"/><circle cx="50" cy="48" r="22" fill="none" stroke="#F5F0E8" stroke-width="2.5" opacity="0.7"/><circle cx="70" cy="48" r="22" fill="#B89E8A" opacity="0.25"/><circle cx="70" cy="48" r="22" fill="none" stroke="#F8F0EB" stroke-width="2.5" opacity="0.7"/><circle cx="60" cy="68" r="22" fill="#8A9E82" opacity="0.25"/><circle cx="60" cy="68" r="22" fill="none" stroke="#F0F4ED" stroke-width="2.5" opacity="0.7"/><circle cx="60" cy="55" r="8" fill="white" opacity="0.35"/><circle cx="60" cy="55" r="4" fill="white" opacity="0.7"/></svg>
+        </div>
+        <div class="preview-box sm preview-dark">
+          <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg3xs" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B7355"/><stop offset="50%" stop-color="#9B8F7E"/><stop offset="100%" stop-color="#6F5B3E"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg3xs)"/><rect x="0" y="0" width="120" height="58" rx="28" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="48" r="22" fill="#9B8F7E" opacity="0.25"/><circle cx="50" cy="48" r="22" fill="none" stroke="#F5F0E8" stroke-width="2.5" opacity="0.7"/><circle cx="70" cy="48" r="22" fill="#B89E8A" opacity="0.25"/><circle cx="70" cy="48" r="22" fill="none" stroke="#F8F0EB" stroke-width="2.5" opacity="0.7"/><circle cx="60" cy="68" r="22" fill="#8A9E82" opacity="0.25"/><circle cx="60" cy="68" r="22" fill="none" stroke="#F0F4ED" stroke-width="2.5" opacity="0.7"/><circle cx="60" cy="55" r="8" fill="white" opacity="0.35"/><circle cx="60" cy="55" r="4" fill="white" opacity="0.7"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 4: Mountain Path -->
+    <div class="card">
+      <span class="option-label">Option 4</span>
+      <div class="icon-container">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg4" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#A68B6B"/>
+              <stop offset="100%" stop-color="#8B7355"/>
+            </linearGradient>
+            <linearGradient id="mtn4" x1="60" y1="25" x2="60" y2="95" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="white" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="white" stop-opacity="0.3"/>
+            </linearGradient>
+          </defs>
+          <!-- Background -->
+          <rect width="120" height="120" rx="28" fill="url(#bg4)"/>
+          <!-- Glass overlay -->
+          <rect x="0" y="0" width="120" height="56" rx="28" fill="rgba(255,255,255,0.1)"/>
+          <!-- Back mountain (subtle) -->
+          <path d="M20,90 L50,38 L80,90 Z" fill="rgba(255,255,255,0.12)"/>
+          <!-- Front mountain -->
+          <path d="M35,90 L65,30 L95,90 Z" fill="url(#mtn4)" opacity="0.6"/>
+          <!-- Snow cap -->
+          <path d="M58,38 L65,30 L72,38 L68,38 L65,42 L62,38 Z" fill="white" opacity="0.9"/>
+          <!-- Winding path -->
+          <path d="M65,90 C65,85 58,80 62,75 C66,70 55,65 60,58 C65,51 62,45 65,38" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.7" fill="none"/>
+          <!-- Sun/star at peak -->
+          <circle cx="65" cy="24" r="6" fill="white" opacity="0.5"/>
+          <circle cx="65" cy="24" r="3" fill="white" opacity="0.85"/>
+          <!-- Shine -->
+          <rect x="8" y="8" width="45" height="22" rx="11" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+      </div>
+      <span class="icon-name">Summit Path</span>
+      <span class="icon-desc">A mountain with a winding path to the summit — represents the coaching journey, step-by-step growth, and reaching your goals.</span>
+      <div class="previews">
+        <div class="preview-box md preview-dark">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg4s" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#A68B6B"/><stop offset="100%" stop-color="#8B7355"/></linearGradient><linearGradient id="m4s" x1="60" y1="25" x2="60" y2="95" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="100%" stop-color="white" stop-opacity="0.3"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg4s)"/><rect x="0" y="0" width="120" height="56" rx="28" fill="rgba(255,255,255,0.1)"/><path d="M20,90 L50,38 L80,90 Z" fill="rgba(255,255,255,0.12)"/><path d="M35,90 L65,30 L95,90 Z" fill="url(#m4s)" opacity="0.6"/><path d="M58,38 L65,30 L72,38 L68,38 L65,42 L62,38 Z" fill="white" opacity="0.9"/><path d="M65,90 C65,85 58,80 62,75 C66,70 55,65 60,58 C65,51 62,45 65,38" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.7" fill="none"/><circle cx="65" cy="24" r="6" fill="white" opacity="0.5"/><circle cx="65" cy="24" r="3" fill="white" opacity="0.85"/></svg>
+        </div>
+        <div class="preview-box md preview-light">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg4l" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#A68B6B"/><stop offset="100%" stop-color="#8B7355"/></linearGradient><linearGradient id="m4l" x1="60" y1="25" x2="60" y2="95" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="100%" stop-color="white" stop-opacity="0.3"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg4l)"/><rect x="0" y="0" width="120" height="56" rx="28" fill="rgba(255,255,255,0.1)"/><path d="M20,90 L50,38 L80,90 Z" fill="rgba(255,255,255,0.12)"/><path d="M35,90 L65,30 L95,90 Z" fill="url(#m4l)" opacity="0.6"/><path d="M58,38 L65,30 L72,38 L68,38 L65,42 L62,38 Z" fill="white" opacity="0.9"/><path d="M65,90 C65,85 58,80 62,75 C66,70 55,65 60,58 C65,51 62,45 65,38" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.7" fill="none"/><circle cx="65" cy="24" r="6" fill="white" opacity="0.5"/><circle cx="65" cy="24" r="3" fill="white" opacity="0.85"/></svg>
+        </div>
+        <div class="preview-box sm preview-dark">
+          <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg4xs" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#A68B6B"/><stop offset="100%" stop-color="#8B7355"/></linearGradient><linearGradient id="m4xs" x1="60" y1="25" x2="60" y2="95" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="white" stop-opacity="0.9"/><stop offset="100%" stop-color="white" stop-opacity="0.3"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg4xs)"/><rect x="0" y="0" width="120" height="56" rx="28" fill="rgba(255,255,255,0.1)"/><path d="M20,90 L50,38 L80,90 Z" fill="rgba(255,255,255,0.12)"/><path d="M35,90 L65,30 L95,90 Z" fill="url(#m4xs)" opacity="0.6"/><path d="M58,38 L65,30 L72,38 L68,38 L65,42 L62,38 Z" fill="white" opacity="0.9"/><path d="M65,90 C65,85 58,80 62,75 C66,70 55,65 60,58 C65,51 62,45 65,38" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.7" fill="none"/><circle cx="65" cy="24" r="6" fill="white" opacity="0.5"/><circle cx="65" cy="24" r="3" fill="white" opacity="0.85"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 5: Warm Glow -->
+    <div class="card">
+      <span class="option-label">Option 5</span>
+      <div class="icon-container">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg5" x1="0" y1="120" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#6F5B3E"/>
+              <stop offset="100%" stop-color="#8B7355"/>
+            </linearGradient>
+            <radialGradient id="glow5" cx="60" cy="52" r="35" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F5F0E8" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#B89E8A" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="flame5" x1="60" y1="75" x2="60" y2="30" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#B89E8A"/>
+              <stop offset="50%" stop-color="#EDE6D8"/>
+              <stop offset="100%" stop-color="white"/>
+            </linearGradient>
+          </defs>
+          <!-- Background -->
+          <rect width="120" height="120" rx="28" fill="url(#bg5)"/>
+          <!-- Glass overlay -->
+          <rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.08)"/>
+          <!-- Ambient glow -->
+          <circle cx="60" cy="52" r="38" fill="url(#glow5)"/>
+          <!-- Outer flame / aura -->
+          <path d="M60,28 C52,40 42,50 44,65 C46,78 54,82 60,84 C66,82 74,78 76,65 C78,50 68,40 60,28Z" fill="url(#flame5)" opacity="0.3"/>
+          <!-- Inner flame -->
+          <path d="M60,38 C55,47 48,54 50,64 C51,72 56,76 60,78 C64,76 69,72 70,64 C72,54 65,47 60,38Z" fill="url(#flame5)" opacity="0.6"/>
+          <!-- Core flame -->
+          <path d="M60,48 C57,54 53,58 54,64 C55,69 58,72 60,73 C62,72 65,69 66,64 C67,58 63,54 60,48Z" fill="white" opacity="0.85"/>
+          <!-- Bright center -->
+          <ellipse cx="60" cy="66" rx="4" ry="5" fill="white" opacity="0.95"/>
+          <!-- Cupped hands base -->
+          <path d="M40,78 C40,72 48,85 60,86 C72,85 80,72 80,78 C80,86 72,94 60,94 C48,94 40,86 40,78Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+          <!-- Shine -->
+          <rect x="8" y="8" width="45" height="22" rx="11" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+      </div>
+      <span class="icon-name">Inner Light</span>
+      <span class="icon-desc">A warm glowing flame cradled in hands — represents inner growth, mindfulness, and the nurturing nature of coaching.</span>
+      <div class="previews">
+        <div class="preview-box md preview-dark">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg5s" x1="0" y1="120" x2="120" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6F5B3E"/><stop offset="100%" stop-color="#8B7355"/></linearGradient><radialGradient id="g5s" cx="60" cy="52" r="35" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F5F0E8" stop-opacity="0.5"/><stop offset="100%" stop-color="#B89E8A" stop-opacity="0"/></radialGradient><linearGradient id="f5s" x1="60" y1="75" x2="60" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#B89E8A"/><stop offset="50%" stop-color="#EDE6D8"/><stop offset="100%" stop-color="white"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg5s)"/><rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.08)"/><circle cx="60" cy="52" r="38" fill="url(#g5s)"/><path d="M60,28 C52,40 42,50 44,65 C46,78 54,82 60,84 C66,82 74,78 76,65 C78,50 68,40 60,28Z" fill="url(#f5s)" opacity="0.3"/><path d="M60,38 C55,47 48,54 50,64 C51,72 56,76 60,78 C64,76 69,72 70,64 C72,54 65,47 60,38Z" fill="url(#f5s)" opacity="0.6"/><path d="M60,48 C57,54 53,58 54,64 C55,69 58,72 60,73 C62,72 65,69 66,64 C67,58 63,54 60,48Z" fill="white" opacity="0.85"/><ellipse cx="60" cy="66" rx="4" ry="5" fill="white" opacity="0.95"/><path d="M40,78 C40,72 48,85 60,86 C72,85 80,72 80,78 C80,86 72,94 60,94 C48,94 40,86 40,78Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/></svg>
+        </div>
+        <div class="preview-box md preview-light">
+          <svg width="48" height="48" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg5l" x1="0" y1="120" x2="120" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6F5B3E"/><stop offset="100%" stop-color="#8B7355"/></linearGradient><radialGradient id="g5l" cx="60" cy="52" r="35" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F5F0E8" stop-opacity="0.5"/><stop offset="100%" stop-color="#B89E8A" stop-opacity="0"/></radialGradient><linearGradient id="f5l" x1="60" y1="75" x2="60" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#B89E8A"/><stop offset="50%" stop-color="#EDE6D8"/><stop offset="100%" stop-color="white"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg5l)"/><rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.08)"/><circle cx="60" cy="52" r="38" fill="url(#g5l)"/><path d="M60,28 C52,40 42,50 44,65 C46,78 54,82 60,84 C66,82 74,78 76,65 C78,50 68,40 60,28Z" fill="url(#f5l)" opacity="0.3"/><path d="M60,38 C55,47 48,54 50,64 C51,72 56,76 60,78 C64,76 69,72 70,64 C72,54 65,47 60,38Z" fill="url(#f5l)" opacity="0.6"/><path d="M60,48 C57,54 53,58 54,64 C55,69 58,72 60,73 C62,72 65,69 66,64 C67,58 63,54 60,48Z" fill="white" opacity="0.85"/><ellipse cx="60" cy="66" rx="4" ry="5" fill="white" opacity="0.95"/><path d="M40,78 C40,72 48,85 60,86 C72,85 80,72 80,78 C80,86 72,94 60,94 C48,94 40,86 40,78Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/></svg>
+        </div>
+        <div class="preview-box sm preview-dark">
+          <svg width="32" height="32" viewBox="0 0 120 120" fill="none"><defs><linearGradient id="bg5xs" x1="0" y1="120" x2="120" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6F5B3E"/><stop offset="100%" stop-color="#8B7355"/></linearGradient><radialGradient id="g5xs" cx="60" cy="52" r="35" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F5F0E8" stop-opacity="0.5"/><stop offset="100%" stop-color="#B89E8A" stop-opacity="0"/></radialGradient><linearGradient id="f5xs" x1="60" y1="75" x2="60" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#B89E8A"/><stop offset="50%" stop-color="#EDE6D8"/><stop offset="100%" stop-color="white"/></linearGradient></defs><rect width="120" height="120" rx="28" fill="url(#bg5xs)"/><rect x="0" y="0" width="120" height="55" rx="28" fill="rgba(255,255,255,0.08)"/><circle cx="60" cy="52" r="38" fill="url(#g5xs)"/><path d="M60,28 C52,40 42,50 44,65 C46,78 54,82 60,84 C66,82 74,78 76,65 C78,50 68,40 60,28Z" fill="url(#f5xs)" opacity="0.3"/><path d="M60,38 C55,47 48,54 50,64 C51,72 56,76 60,78 C64,76 69,72 70,64 C72,54 65,47 60,38Z" fill="url(#f5xs)" opacity="0.6"/><path d="M60,48 C57,54 53,58 54,64 C55,69 58,72 60,73 C62,72 65,69 66,64 C67,58 63,54 60,48Z" fill="white" opacity="0.85"/><ellipse cx="60" cy="66" rx="4" ry="5" fill="white" opacity="0.95"/><path d="M40,78 C40,72 48,85 60,86 C72,85 80,72 80,78 C80,86 72,94 60,94 C48,94 40,86 40,78Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/></svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:48px; color:#666; font-size:0.8rem;">
+    <p>All icons use the coaching app's earth-tone palette with GlassBank-style glassmorphism effects</p>
+    <p style="margin-top:8px; color:#555;">Colors: #8B7355 (warm brown) &bull; #8A9E82 (earthy green) &bull; #B89E8A (soft tan) &bull; #FAF8F5 (warm white)</p>
+  </div>
+
+</body>
+</html>
