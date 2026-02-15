@@ -26,16 +26,16 @@ export function CardSortExercise({
 
   return (
     <div className="space-y-6">
-      <p className="text-gray-700">{prompt}</p>
+      <p className="text-stone-700">{prompt}</p>
       {items.map((item) => (
         <div
           key={item.id}
-          className="p-4 rounded-xl border border-gray-100 bg-white space-y-3"
+          className="p-4 rounded-xl border border-stone-100 bg-white space-y-3"
         >
           <div>
-            <p className="font-medium text-gray-900">{item.label}</p>
+            <p className="font-medium text-stone-900">{item.label}</p>
             {item.description && (
-              <p className="text-sm text-gray-500 mt-0.5">{item.description}</p>
+              <p className="text-sm text-stone-500 mt-0.5">{item.description}</p>
             )}
           </div>
           <div className="flex gap-2 flex-wrap">
@@ -45,8 +45,8 @@ export function CardSortExercise({
                 onClick={() => assign(item.id, bucket)}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] ${
                   assignments[item.id] === bucket
-                    ? "bg-indigo-600 text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    ? "bg-[#8B7355] text-white"
+                    : "bg-stone-100 text-stone-600 hover:bg-stone-200"
                 }`}
               >
                 {bucket}
@@ -58,7 +58,7 @@ export function CardSortExercise({
       {allAssigned && (
         <button
           onClick={() => onComplete(assignments)}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+          className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
         >
           Continue
         </button>

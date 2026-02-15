@@ -89,7 +89,7 @@ export function LessonStepView({
       <div className="flex items-center justify-between">
         <button
           onClick={() => router.back()}
-          className="text-gray-500 hover:text-gray-900 min-h-[44px] min-w-[44px] flex items-center"
+          className="text-stone-500 hover:text-stone-900 min-h-[44px] min-w-[44px] flex items-center"
         >
           <svg
             className="w-5 h-5"

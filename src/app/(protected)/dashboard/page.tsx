@@ -68,20 +68,20 @@ export default async function DashboardPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Your Journey</h1>
-          <p className="text-gray-500 mt-0.5">Keep going, you&apos;re doing great</p>
+          <h1 className="text-2xl font-bold text-stone-900">Your Journey</h1>
+          <p className="text-stone-500 mt-0.5">Keep going, you&apos;re doing great</p>
         </div>
         <StreakCounter count={streak.currentStreak} />
       </div>
 
       {nextLesson && (
         <Link href={`/journey/${nextLesson.category}/${nextLesson.module}/${nextLesson.lesson}`}>
-          <Card className="bg-gradient-to-br from-indigo-500 to-purple-600 border-none text-white">
-            <p className="text-indigo-200 text-sm font-medium">
+          <Card className="bg-gradient-to-br from-[#8B7355] to-[#6B5D4A] border-none text-white">
+            <p className="text-[#E5D9C8] text-sm font-medium">
               Continue your journey
             </p>
             <h2 className="text-lg font-bold mt-1">{nextLesson.lessonTitle}</h2>
-            <p className="text-indigo-200 text-sm mt-1">
+            <p className="text-[#E5D9C8] text-sm mt-1">
               {nextLesson.categoryTitle}
             </p>
             <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-lg px-4 py-2 text-sm font-medium">
@@ -105,7 +105,7 @@ export default async function DashboardPage() {
       )}
 
       <div>
-        <h2 className="text-lg font-semibold text-gray-900 mb-3">
+        <h2 className="text-lg font-semibold text-stone-900 mb-3">
           Your Categories
         </h2>
         <div className="space-y-3">

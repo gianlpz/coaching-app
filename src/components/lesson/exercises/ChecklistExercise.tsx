@@ -30,7 +30,7 @@ export function ChecklistExercise({
 
   return (
     <div className="space-y-4">
-      <p className="text-gray-700">{prompt}</p>
+      <p className="text-stone-700">{prompt}</p>
       <div className="space-y-2">
         {items.map((item) => (
           <button
@@ -38,16 +38,16 @@ export function ChecklistExercise({
             onClick={() => toggle(item.id)}
             className={`w-full text-left p-4 rounded-xl border-2 transition-all min-h-[44px] ${
               checked.has(item.id)
-                ? "border-indigo-500 bg-indigo-50"
-                : "border-gray-100 bg-white hover:border-gray-200"
+                ? "border-[#8B7355] bg-[#F5F0E8]"
+                : "border-stone-100 bg-white hover:border-stone-200"
             }`}
           >
             <div className="flex items-center gap-3">
               <div
                 className={`w-5 h-5 rounded shrink-0 border-2 flex items-center justify-center ${
                   checked.has(item.id)
-                    ? "border-indigo-600 bg-indigo-600"
-                    : "border-gray-300"
+                    ? "border-[#8B7355] bg-[#8B7355]"
+                    : "border-stone-300"
                 }`}
               >
                 {checked.has(item.id) && (
@@ -67,9 +67,9 @@ export function ChecklistExercise({
                 )}
               </div>
               <div>
-                <p className="text-gray-900">{item.label}</p>
+                <p className="text-stone-900">{item.label}</p>
                 {item.description && (
-                  <p className="text-sm text-gray-500 mt-0.5">
+                  <p className="text-sm text-stone-500 mt-0.5">
                     {item.description}
                   </p>
                 )}
@@ -81,7 +81,7 @@ export function ChecklistExercise({
       {checked.size > 0 && (
         <button
           onClick={() => onComplete(Array.from(checked))}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+          className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
         >
           Continue ({checked.size} selected)
         </button>

@@ -10,9 +10,9 @@ const categoryLabels: Record<string, string> = {
 };
 
 const categoryColors: Record<string, string> = {
-  career: "bg-blue-100 text-blue-700",
-  relationships: "bg-rose-100 text-rose-700",
-  "personal-growth": "bg-emerald-100 text-emerald-700",
+  career: "bg-[#F5F0E8] text-[#6F5B3E]",
+  relationships: "bg-[#F8F0EB] text-[#8B6F5A]",
+  "personal-growth": "bg-[#F0F4ED] text-[#5A6F52]",
 };
 
 export default async function JournalPage() {
@@ -41,8 +41,8 @@ export default async function JournalPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Journal</h1>
-        <p className="text-gray-500 mt-0.5">
+        <h1 className="text-2xl font-bold text-stone-900">Journal</h1>
+        <p className="text-stone-500 mt-0.5">
           Your reflections and insights from lessons
         </p>
       </div>
@@ -50,15 +50,15 @@ export default async function JournalPage() {
       {entries.length === 0 ? (
         <Card className="text-center py-12">
           <div className="text-4xl mb-3">📝</div>
-          <p className="text-gray-600 font-medium">No journal entries yet</p>
-          <p className="text-gray-400 text-sm mt-1">
+          <p className="text-stone-600 font-medium">No journal entries yet</p>
+          <p className="text-stone-400 text-sm mt-1">
             Complete lessons to add reflections here
           </p>
         </Card>
       ) : (
         Object.entries(grouped).map(([date, dateEntries]) => (
           <div key={date}>
-            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-3">
               {date}
             </h2>
             <div className="space-y-3">
@@ -68,16 +68,16 @@ export default async function JournalPage() {
                     <span
                       className={`text-xs font-medium px-2 py-1 rounded-full shrink-0 ${
                         categoryColors[entry.categorySlug] ||
-                        "bg-gray-100 text-gray-600"
+                        "bg-stone-100 text-stone-600"
                       }`}
                     >
                       {categoryLabels[entry.categorySlug] || entry.categorySlug}
                     </span>
                   </div>
-                  <p className="text-sm font-medium text-gray-700 mt-2">
+                  <p className="text-sm font-medium text-stone-700 mt-2">
                     {entry.promptText}
                   </p>
-                  <p className="text-gray-600 mt-1 text-sm leading-relaxed">
+                  <p className="text-stone-600 mt-1 text-sm leading-relaxed">
                     {entry.responseText}
                   </p>
                 </Card>

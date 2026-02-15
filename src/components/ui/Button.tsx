@@ -16,9 +16,9 @@ export function Button({
     "font-medium rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
 
   const variants = {
-    primary: "bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-500",
-    secondary: "bg-gray-100 text-gray-900 hover:bg-gray-200 focus:ring-gray-500",
-    ghost: "bg-transparent text-gray-600 hover:bg-gray-100 focus:ring-gray-500",
+    primary: "bg-[#8B7355] text-white hover:bg-[#6F5B3E] focus:ring-[#A68B6B]",
+    secondary: "bg-stone-100 text-stone-900 hover:bg-stone-200 focus:ring-stone-500",
+    ghost: "bg-transparent text-stone-600 hover:bg-stone-100 focus:ring-stone-500",
   };
 
   const sizes = {

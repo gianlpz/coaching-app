@@ -18,9 +18,9 @@ const allBadgeTypes = [
 ];
 
 const categoryColors: Record<string, string> = {
-  career: "bg-blue-500",
-  relationships: "bg-rose-500",
-  "personal-growth": "bg-emerald-500",
+  career: "bg-[#9B8F7E]",
+  relationships: "bg-[#B89E8A]",
+  "personal-growth": "bg-[#8A9E82]",
 };
 
 export default async function ProgressPage() {
@@ -48,23 +48,23 @@ export default async function ProgressPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Your Progress</h1>
-        <p className="text-gray-500 mt-0.5">Track your growth over time</p>
+        <h1 className="text-2xl font-bold text-stone-900">Your Progress</h1>
+        <p className="text-stone-500 mt-0.5">Track your growth over time</p>
       </div>
 
       {/* Streak */}
       <Card>
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-sm text-gray-500">Current streak</p>
-            <p className="text-3xl font-bold text-gray-900">
+            <p className="text-sm text-stone-500">Current streak</p>
+            <p className="text-3xl font-bold text-stone-900">
               {streak.currentStreak}{" "}
-              <span className="text-lg font-normal text-gray-500">days</span>
+              <span className="text-lg font-normal text-stone-500">days</span>
             </p>
           </div>
           <div className="text-right">
-            <p className="text-sm text-gray-500">Longest streak</p>
-            <p className="text-xl font-bold text-gray-900">
+            <p className="text-sm text-stone-500">Longest streak</p>
+            <p className="text-xl font-bold text-stone-900">
               {streak.longestStreak} days
             </p>
           </div>
@@ -74,21 +74,21 @@ export default async function ProgressPage() {
 
       {/* Overall progress */}
       <Card>
-        <h2 className="font-semibold text-gray-900 mb-3">Overall Progress</h2>
+        <h2 className="font-semibold text-stone-900 mb-3">Overall Progress</h2>
         <ProgressBar
           value={completedLessons}
           max={totalLessons}
           size="lg"
           showLabel
         />
-        <p className="text-sm text-gray-500 mt-2">
+        <p className="text-sm text-stone-500 mt-2">
           {completedLessons} of {totalLessons} lessons completed
         </p>
       </Card>
 
       {/* Category progress */}
       <Card>
-        <h2 className="font-semibold text-gray-900 mb-4">By Category</h2>
+        <h2 className="font-semibold text-stone-900 mb-4">By Category</h2>
         <div className="space-y-4">
           {categories.map((cat) => {
             const total = cat.modules.reduce(
@@ -101,10 +101,10 @@ export default async function ProgressPage() {
             return (
               <div key={cat.slug}>
                 <div className="flex justify-between text-sm mb-1">
-                  <span className="font-medium text-gray-700">
+                  <span className="font-medium text-stone-700">
                     {cat.title}
                   </span>
-                  <span className="text-gray-500">
+                  <span className="text-stone-500">
                     {completed}/{total}
                   </span>
                 </div>
@@ -112,7 +112,7 @@ export default async function ProgressPage() {
                   value={completed}
                   max={total}
                   size="sm"
-                  color={categoryColors[cat.slug] || "bg-indigo-600"}
+                  color={categoryColors[cat.slug] || "bg-[#8B7355]"}
                 />
               </div>
             );
@@ -122,7 +122,7 @@ export default async function ProgressPage() {
 
       {/* Badges */}
       <Card>
-        <h2 className="font-semibold text-gray-900 mb-4">Badges</h2>
+        <h2 className="font-semibold text-stone-900 mb-4">Badges</h2>
         <div className="grid grid-cols-3 gap-2">
           {allBadgeTypes.map((bt) => {
             const earned = earnedBadgeTypes.has(bt.type);
@@ -143,7 +143,7 @@ export default async function ProgressPage() {
       {/* Life Satisfaction Chart */}
       {assessment && (
         <Card>
-          <h2 className="font-semibold text-gray-900 mb-4">
+          <h2 className="font-semibold text-stone-900 mb-4">
             Life Satisfaction
           </h2>
           <div className="flex justify-center">
@@ -152,7 +152,7 @@ export default async function ProgressPage() {
               values={Object.values(assessment.scores)}
             />
           </div>
-          <p className="text-xs text-gray-400 text-center mt-2">
+          <p className="text-xs text-stone-400 text-center mt-2">
             From your onboarding assessment
           </p>
         </Card>

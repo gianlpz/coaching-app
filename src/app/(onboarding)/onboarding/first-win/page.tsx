@@ -39,10 +39,10 @@ export default function FirstWinPage() {
     <div className="space-y-6">
       <div className="text-center">
         <div className="text-5xl mb-4">🎉</div>
-        <h1 className="text-2xl font-bold text-gray-900">
+        <h1 className="text-2xl font-bold text-stone-900">
           Your First Quick Win
         </h1>
-        <p className="text-gray-500 mt-1">
+        <p className="text-stone-500 mt-1">
           Let&apos;s start with something small but powerful
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function FirstWinPage() {
               <Card className="hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-4">
                   <span className="text-3xl">{win.icon}</span>
-                  <p className="font-medium text-gray-900">{win.title}</p>
+                  <p className="font-medium text-stone-900">{win.title}</p>
                 </div>
               </Card>
             </button>
@@ -66,8 +66,8 @@ export default function FirstWinPage() {
         </div>
       ) : (
         <div className="space-y-4">
-          <Card className="bg-indigo-50 border-indigo-200">
-            <p className="font-medium text-indigo-900">
+          <Card className="bg-[#F5F0E8] border-[#E5D9C8]">
+            <p className="font-medium text-[#4A3D2E]">
               {quickWins.find((w) => w.id === selected)?.title}
             </p>
           </Card>
@@ -76,12 +76,12 @@ export default function FirstWinPage() {
             onChange={(e) => setResponse(e.target.value)}
             placeholder="Write your response here..."
             rows={5}
-            className="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none text-base"
+            className="w-full p-4 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-[#A68B6B] resize-none text-base"
           />
           <button
             onClick={handleFinish}
             disabled={loading}
-            className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors disabled:opacity-50"
+            className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors disabled:opacity-50"
           >
             {loading ? "Setting up your journey..." : "Start my journey"}
           </button>

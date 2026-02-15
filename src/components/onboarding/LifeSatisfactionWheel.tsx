@@ -31,7 +31,7 @@ export function LifeSatisfactionWheel({
 
   return (
     <div className="space-y-6">
-      <p className="text-gray-600 text-center">
+      <p className="text-stone-600 text-center">
         Rate your satisfaction in each area from 1 (low) to 10 (high)
       </p>
 
@@ -54,7 +54,7 @@ export function LifeSatisfactionWheel({
 
       <button
         onClick={() => onComplete(scores)}
-        className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+        className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
       >
         See my results
       </button>

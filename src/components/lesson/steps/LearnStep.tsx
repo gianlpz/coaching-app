@@ -10,25 +10,25 @@ export function LearnStep({ step, onContinue }: LearnStepProps) {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h2>
-        <p className="text-gray-700 leading-relaxed">{step.content}</p>
+        <h2 className="text-xl font-bold text-stone-900 mb-3">{step.title}</h2>
+        <p className="text-stone-700 leading-relaxed">{step.content}</p>
       </div>
       {step.keyTakeaway && (
-        <Card className="bg-amber-50 border-amber-200">
+        <Card className="bg-[#F5F0E8] border-[#E5D9C8]">
           <div className="flex gap-3">
             <span className="text-xl shrink-0">💡</span>
             <div>
-              <p className="text-sm font-semibold text-amber-800 mb-1">
+              <p className="text-sm font-semibold text-[#6F5B3E] mb-1">
                 Key Takeaway
               </p>
-              <p className="text-amber-900">{step.keyTakeaway}</p>
+              <p className="text-[#4A3D2E]">{step.keyTakeaway}</p>
             </div>
           </div>
         </Card>
       )}
       <button
         onClick={onContinue}
-        className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+        className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
       >
         Got it, let&apos;s practice
       </button>

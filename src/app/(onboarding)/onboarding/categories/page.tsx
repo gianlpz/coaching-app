@@ -15,7 +15,7 @@ export default function CategoriesPage() {
   return (
     <div className="space-y-6">
       <div className="text-center">
-        <h1 className="text-2xl font-bold text-gray-900">
+        <h1 className="text-2xl font-bold text-stone-900">
           What do you want to work on?
         </h1>
       </div>

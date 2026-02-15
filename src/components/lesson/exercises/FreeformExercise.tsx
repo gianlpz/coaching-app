@@ -15,21 +15,21 @@ export function FreeformExercise({
 
   return (
     <div className="space-y-4">
-      <p className="text-gray-700">{prompt}</p>
+      <p className="text-stone-700">{prompt}</p>
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Write your thoughts here..."
         rows={6}
-        className="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none text-base"
+        className="w-full p-4 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-[#A68B6B] focus:border-transparent resize-none text-base"
       />
-      <p className="text-xs text-gray-400">
+      <p className="text-xs text-stone-400">
         {text.length > 0 ? `${text.split(/\s+/).filter(Boolean).length} words` : "Start writing..."}
       </p>
       {text.trim().length > 10 && (
         <button
           onClick={() => onComplete(text)}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+          className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
         >
           Continue
         </button>

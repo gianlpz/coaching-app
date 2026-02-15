@@ -16,8 +16,8 @@ interface DoStepProps {
 export function DoStep({ step, onContinue }: DoStepProps) {
   return (
     <div className="space-y-4">
-      <h2 className="text-xl font-bold text-gray-900">{step.title}</h2>
-      <p className="text-gray-600">{step.content}</p>
+      <h2 className="text-xl font-bold text-stone-900">{step.title}</h2>
+      <p className="text-stone-600">{step.content}</p>
 
       {step.exerciseType === "ranking" && step.exerciseItems && (
         <RankingExercise

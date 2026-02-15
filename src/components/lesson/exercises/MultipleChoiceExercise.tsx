@@ -17,7 +17,7 @@ export function MultipleChoiceExercise({
 
   return (
     <div className="space-y-4">
-      <p className="text-gray-700">{prompt}</p>
+      <p className="text-stone-700">{prompt}</p>
       <div className="space-y-2">
         {options.map((option) => (
           <button
@@ -25,23 +25,23 @@ export function MultipleChoiceExercise({
             onClick={() => setSelected(option)}
             className={`w-full text-left p-4 rounded-xl border-2 transition-all min-h-[44px] ${
               selected === option
-                ? "border-indigo-500 bg-indigo-50"
-                : "border-gray-100 bg-white hover:border-gray-200"
+                ? "border-[#8B7355] bg-[#F5F0E8]"
+                : "border-stone-100 bg-white hover:border-stone-200"
             }`}
           >
             <div className="flex items-center gap-3">
               <div
                 className={`w-5 h-5 rounded-full border-2 shrink-0 flex items-center justify-center ${
                   selected === option
-                    ? "border-indigo-600 bg-indigo-600"
-                    : "border-gray-300"
+                    ? "border-[#8B7355] bg-[#8B7355]"
+                    : "border-stone-300"
                 }`}
               >
                 {selected === option && (
                   <div className="w-2 h-2 rounded-full bg-white" />
                 )}
               </div>
-              <span className="text-gray-900">{option}</span>
+              <span className="text-stone-900">{option}</span>
             </div>
           </button>
         ))}
@@ -49,7 +49,7 @@ export function MultipleChoiceExercise({
       {selected && (
         <button
           onClick={() => onComplete(selected)}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+          className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
         >
           Continue
         </button>

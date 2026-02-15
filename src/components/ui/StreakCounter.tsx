@@ -10,8 +10,8 @@ export function StreakCounter({ count, className = "" }: StreakCounterProps) {
         {count > 0 ? "🔥" : "💤"}
       </span>
       <div>
-        <p className="text-lg font-bold text-gray-900">{count}</p>
-        <p className="text-xs text-gray-500">
+        <p className="text-lg font-bold text-stone-900">{count}</p>
+        <p className="text-xs text-stone-500">
           {count === 1 ? "day streak" : "day streak"}
         </p>
       </div>

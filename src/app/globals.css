@@ -1,13 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #171717;
+  --background: #FAF8F5;
+  --foreground: #2C2520;
+  --primary: #8B7355;
+  --primary-hover: #6F5B3E;
+  --primary-focus: #A68B6B;
+  --primary-light: #F5F0E8;
+  --primary-lighter: #EDE6D8;
+  --category-career: #9B8F7E;
+  --category-career-light: #F5F0E8;
+  --category-relationships: #B89E8A;
+  --category-relationships-light: #F8F0EB;
+  --category-growth: #8A9E82;
+  --category-growth-light: #F0F4ED;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-focus: var(--primary-focus);
+  --color-primary-light: var(--primary-light);
+  --color-primary-lighter: var(--primary-lighter);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

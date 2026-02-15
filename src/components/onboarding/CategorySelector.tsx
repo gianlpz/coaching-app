@@ -1,31 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const categories = [
   {
     slug: "career",
     title: "Career",
     description: "Find clarity in your professional life",
-    icon: "💼",
-    color: "border-blue-500 bg-blue-50",
-    selectedColor: "border-blue-500 bg-blue-100 ring-2 ring-blue-500",
+    image: "/images/categories/career.jpg",
+    color: "border-[#9B8F7E] bg-[#F5F0E8]",
+    selectedColor: "border-[#9B8F7E] bg-[#EDE6D8] ring-2 ring-[#9B8F7E]",
   },
   {
     slug: "relationships",
     title: "Relationships",
     description: "Build stronger, healthier connections",
-    icon: "❤️",
-    color: "border-rose-500 bg-rose-50",
-    selectedColor: "border-rose-500 bg-rose-100 ring-2 ring-rose-500",
+    image: "/images/categories/relationships.jpg",
+    color: "border-[#B89E8A] bg-[#F8F0EB]",
+    selectedColor: "border-[#B89E8A] bg-[#F5EBE4] ring-2 ring-[#B89E8A]",
   },
   {
     slug: "personal-growth",
     title: "Personal Growth",
     description: "Discover your values and build self-awareness",
-    icon: "✨",
-    color: "border-emerald-500 bg-emerald-50",
-    selectedColor: "border-emerald-500 bg-emerald-100 ring-2 ring-emerald-500",
+    image: "/images/categories/personal-growth.jpg",
+    color: "border-[#8A9E82] bg-[#F0F4ED]",
+    selectedColor: "border-[#8A9E82] bg-[#E6EDE2] ring-2 ring-[#8A9E82]",
   },
 ];
 
@@ -50,7 +51,7 @@ export function CategorySelector({ onSelect }: CategorySelectorProps) {
 
   return (
     <div className="space-y-4">
-      <p className="text-gray-600 text-center">
+      <p className="text-stone-600 text-center">
         Choose 1-3 areas to focus on. You can always change this later.
       </p>
       <div className="space-y-3">
@@ -65,10 +66,18 @@ export function CategorySelector({ onSelect }: CategorySelectorProps) {
               }`}
             >
               <div className="flex items-center gap-4">
-                <span className="text-3xl">{cat.icon}</span>
+                <div className="w-14 h-14 rounded-xl overflow-hidden shrink-0">
+                  <Image
+                    src={cat.image}
+                    alt={cat.title}
+                    width={56}
+                    height={56}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">{cat.title}</h3>
-                  <p className="text-sm text-gray-600">{cat.description}</p>
+                  <h3 className="font-semibold text-stone-900">{cat.title}</h3>
+                  <p className="text-sm text-stone-600">{cat.description}</p>
                 </div>
               </div>
             </button>
@@ -78,7 +87,7 @@ export function CategorySelector({ onSelect }: CategorySelectorProps) {
       {selected.size > 0 && (
         <button
           onClick={() => onSelect(Array.from(selected))}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+          className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
         >
           Continue with {selected.size} {selected.size === 1 ? "category" : "categories"}
         </button>

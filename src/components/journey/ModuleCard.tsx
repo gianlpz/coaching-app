@@ -21,7 +21,7 @@ export function ModuleCard({
   order,
   totalLessons,
   completedLessons,
-  color = "bg-indigo-600",
+  color = "bg-[#8B7355]",
 }: ModuleCardProps) {
   const percentage =
     totalLessons > 0 ? (completedLessons / totalLessons) * 100 : 0;
@@ -34,11 +34,11 @@ export function ModuleCard({
             {order}
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-semibold text-gray-900">{title}</h3>
-            <p className="text-sm text-gray-500 mt-0.5">{description}</p>
+            <h3 className="font-semibold text-stone-900">{title}</h3>
+            <p className="text-sm text-stone-500 mt-0.5">{description}</p>
             <div className="mt-3">
               <ProgressBar value={percentage} color={color} size="sm" />
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-xs text-stone-400 mt-1">
                 {completedLessons}/{totalLessons} lessons complete
               </p>
             </div>

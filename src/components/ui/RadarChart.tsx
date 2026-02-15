@@ -14,7 +14,7 @@ export function RadarChart({
   values,
   maxValue = 10,
   size = 280,
-  color = "#6366f1",
+  color = "#8B7355",
   className = "",
 }: RadarChartProps) {
   const cx = size / 2;
@@ -50,7 +50,7 @@ export function RadarChart({
             key={scale}
             d={ringPath}
             fill="none"
-            stroke="#e5e7eb"
+            stroke="#E5D9C8"
             strokeWidth={1}
           />
         );
@@ -66,7 +66,7 @@ export function RadarChart({
             y1={cy}
             x2={x}
             y2={y}
-            stroke="#e5e7eb"
+            stroke="#E5D9C8"
             strokeWidth={1}
           />
         );
@@ -97,7 +97,7 @@ export function RadarChart({
             textAnchor="middle"
             dominantBaseline="middle"
             fontSize={11}
-            fill="#6b7280"
+            fill="#78716c"
             fontWeight={500}
           >
             {label.length > 12 ? label.slice(0, 11) + "..." : label}

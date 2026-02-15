@@ -20,17 +20,17 @@ export function StepIndicator({
           <div
             className={`w-2.5 h-2.5 rounded-full transition-colors ${
               i < currentStep
-                ? "bg-indigo-600"
+                ? "bg-[#8B7355]"
                 : i === currentStep
-                ? "bg-indigo-400 ring-2 ring-indigo-200"
-                : "bg-gray-200"
+                ? "bg-[#B8A48A] ring-2 ring-[#E5D9C8]"
+                : "bg-stone-200"
             }`}
             title={STEP_LABELS[i]}
           />
           {i < totalSteps - 1 && (
             <div
               className={`w-6 h-0.5 ${
-                i < currentStep ? "bg-indigo-600" : "bg-gray-200"
+                i < currentStep ? "bg-[#8B7355]" : "bg-stone-200"
               }`}
             />
           )}

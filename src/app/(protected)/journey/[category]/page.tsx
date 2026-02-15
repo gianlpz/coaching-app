@@ -25,7 +25,7 @@ export default async function CategoryPage({ params }: PageProps) {
       <div className="flex items-center gap-3">
         <Link
           href="/dashboard"
-          className="text-gray-500 hover:text-gray-900 min-h-[44px] min-w-[44px] flex items-center"
+          className="text-stone-500 hover:text-stone-900 min-h-[44px] min-w-[44px] flex items-center"
         >
           <svg
             className="w-5 h-5"
@@ -42,10 +42,10 @@ export default async function CategoryPage({ params }: PageProps) {
           </svg>
         </Link>
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">
+          <h1 className="text-2xl font-bold text-stone-900">
             {category.title}
           </h1>
-          <p className="text-gray-500 text-sm">{category.description}</p>
+          <p className="text-stone-500 text-sm">{category.description}</p>
         </div>
       </div>
 

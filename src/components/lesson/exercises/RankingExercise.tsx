@@ -28,8 +28,8 @@ export function RankingExercise({
 
   return (
     <div className="space-y-4">
-      <p className="text-gray-700">{prompt}</p>
-      <p className="text-sm text-gray-500">
+      <p className="text-stone-700">{prompt}</p>
+      <p className="text-sm text-stone-500">
         Tap to select your top 5 in order of importance ({selected.length}/5)
       </p>
       <div className="space-y-2">
@@ -42,20 +42,20 @@ export function RankingExercise({
               onClick={() => toggleItem(item.id)}
               className={`w-full text-left p-4 rounded-xl border-2 transition-all min-h-[44px] ${
                 isSelected
-                  ? "border-indigo-500 bg-indigo-50"
-                  : "border-gray-100 bg-white hover:border-gray-200"
+                  ? "border-[#8B7355] bg-[#F5F0E8]"
+                  : "border-stone-100 bg-white hover:border-stone-200"
               }`}
             >
               <div className="flex items-center gap-3">
                 {isSelected && (
-                  <span className="w-7 h-7 rounded-full bg-indigo-600 text-white flex items-center justify-center text-sm font-bold shrink-0">
+                  <span className="w-7 h-7 rounded-full bg-[#8B7355] text-white flex items-center justify-center text-sm font-bold shrink-0">
                     {rank + 1}
                   </span>
                 )}
                 <div>
-                  <p className="font-medium text-gray-900">{item.label}</p>
+                  <p className="font-medium text-stone-900">{item.label}</p>
                   {item.description && (
-                    <p className="text-sm text-gray-500 mt-0.5">
+                    <p className="text-sm text-stone-500 mt-0.5">
                       {item.description}
                     </p>
                   )}
@@ -68,7 +68,7 @@ export function RankingExercise({
       {selected.length >= 3 && (
         <button
           onClick={() => onComplete(selected)}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
+          className="w-full py-3 bg-[#8B7355] text-white rounded-xl font-medium hover:bg-[#6F5B3E] transition-colors"
         >
           Continue with my top {selected.length}
         </button>

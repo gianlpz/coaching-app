@@ -17,7 +17,7 @@ export function Badge({ badgeType, badgeLabel, earned, earnedAt }: BadgeProps) {
   return (
     <div
       className={`flex flex-col items-center text-center p-3 rounded-xl ${
-        earned ? "bg-white" : "bg-gray-50 opacity-50"
+        earned ? "bg-white" : "bg-stone-50 opacity-50"
       }`}
     >
       <span className={`text-3xl ${earned ? "" : "grayscale"}`}>
@@ -25,13 +25,13 @@ export function Badge({ badgeType, badgeLabel, earned, earnedAt }: BadgeProps) {
       </span>
       <p
         className={`text-xs font-medium mt-1 ${
-          earned ? "text-gray-900" : "text-gray-400"
+          earned ? "text-stone-900" : "text-stone-400"
         }`}
       >
         {badgeLabel}
       </p>
       {earned && earnedAt && (
-        <p className="text-xs text-gray-400 mt-0.5">
+        <p className="text-xs text-stone-400 mt-0.5">
           {new Date(earnedAt).toLocaleDateString("en-US", {
             month: "short",
             day: "numeric",

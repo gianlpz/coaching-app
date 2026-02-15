@@ -11,7 +11,7 @@ export function ProgressBar({
   value,
   max = 100,
   size = "md",
-  color = "bg-indigo-600",
+  color = "bg-[#8B7355]",
   showLabel = false,
   className = "",
 }: ProgressBarProps) {
@@ -26,7 +26,7 @@ export function ProgressBar({
   return (
     <div className={className}>
       <div
-        className={`w-full bg-gray-100 rounded-full overflow-hidden ${sizes[size]}`}
+        className={`w-full bg-stone-100 rounded-full overflow-hidden ${sizes[size]}`}
       >
         <div
           className={`h-full ${color} rounded-full transition-all duration-300`}
@@ -34,7 +34,7 @@ export function ProgressBar({
         />
       </div>
       {showLabel && (
-        <p className="text-sm text-gray-500 mt-1">{percentage}% complete</p>
+        <p className="text-sm text-stone-500 mt-1">{percentage}% complete</p>
       )}
     </div>
   );
