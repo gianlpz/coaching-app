@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Coaching App
+
+A mobile-first coaching web app for Career, Relationships, and Personal Growth. Built with structured 5-step lessons, interactive exercises, progress tracking, and streak-based accountability.
+
+**Live demo:** [coaching-app-mauve.vercel.app](https://coaching-app-mauve.vercel.app)
+
+## What's Inside
+
+- **3 categories** — Career, Relationships, Personal Growth
+- **6 modules** — 2 per category, each with 4 lessons
+- **24 interactive lessons** — every lesson has 5 steps: Hook, Learn, Do, Reflect, Commit
+- **6 exercise types** — ranking, multiple-choice, checklist, scale, card-sort, freeform
+- **Onboarding flow** — category selection, life satisfaction wheel assessment, quick win
+- **Progress tracking** — streaks, badges, per-category progress bars
+- **Journal** — reflections from lessons saved and browsable by date
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS v4
+- **Database:** Drizzle ORM + Neon Postgres
+- **Auth:** NextAuth v5 (magic link via Resend)
+- **Deployment:** Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Demo Mode (no database needed)
+
+```bash
+npm install
+npm run dev
+```
+
+The app runs in demo mode without any environment variables. All content and UI is fully functional — data just won't persist.
+
+### Full Mode (with database + auth)
+
+1. Create a free database at [neon.tech](https://neon.tech)
+2. Create a free account at [resend.com](https://resend.com) for email
+3. Copy `.env.local` and fill in the values:
+
+```
+DATABASE_URL=your-neon-connection-string
+AUTH_SECRET=your-secret (run: npx auth secret)
+AUTH_RESEND_KEY=your-resend-api-key
+AUTH_EMAIL_FROM=onboarding@resend.dev
+```
+
+4. Push the database schema:
+
+```bash
+npx drizzle-kit push
+```
+
+5. Start the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+coaching-app/
+├── content/                    # Lesson JSON files (not in DB)
+│   ├── career/
+│   ├── relationships/
+│   ├── personal-growth/
+│   └── assessments/
+├── src/
+│   ├── app/
+│   │   ├── (auth)/             # Login + verify pages
+│   │   ├── (onboarding)/       # Onboarding flow
+│   │   ├── (protected)/        # Dashboard, journey, progress, journal
+│   │   └── api/auth/           # NextAuth route handler
+│   ├── components/
+│   │   ├── journey/            # Category, module, lesson cards
+│   │   ├── lesson/             # Step views + exercise components
+│   │   ├── onboarding/         # Category selector, life wheel
+│   │   └── ui/                 # Button, Card, ProgressBar, etc.
+│   ├── lib/                    # DB, auth, content reader, progress, streaks
+│   └── types/                  # TypeScript interfaces for content
+└── drizzle.config.ts
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Coaching Frameworks
 
-## Learn More
+The lesson content draws from evidence-based approaches:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **ACT** (Acceptance and Commitment Therapy) — values clarification, psychological flexibility
+- **CBT** (Cognitive Behavioral Therapy) — thought records, cognitive distortions
+- **Positive Psychology** — VIA character strengths, gratitude practices
+- **GROW Model** — goal setting and reality assessment
+- **Motivational Interviewing** — decisional balance, exception-finding
+- **Gottman Method** — communication styles, active listening
+- **Attachment Theory** — relationship patterns and styles
+- **Mindfulness** — body scans, emotion naming, present-moment awareness
