@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useEffect, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import type { Lesson } from "@/types/content";
 import { StepIndicator } from "@/components/ui/StepIndicator";
@@ -14,6 +14,7 @@ import {
   completeLesson,
   saveReflection,
 } from "@/app/(protected)/journey/actions";
+import { useDemoContext } from "@/components/DemoDataProvider";
 
 interface LessonStepViewProps {
   lesson: Lesson;
@@ -33,6 +34,18 @@ export function LessonStepView({
   const [currentStep, setCurrentStep] = useState(initialStep);
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
+  const demoData = useDemoContext();
+
+  // In demo mode, restore step position from localStorage on mount
+  useEffect(() => {
+    if (!demoData?.isHydrated) return;
+    const savedStep = demoData.getLessonStep(categorySlug, moduleSlug, lesson.slug);
+    if (savedStep > 0 && savedStep !== currentStep) {
+      setCurrentStep(savedStep);
+    }
+    // Only run on hydration, not on every step change
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [demoData?.isHydrated]);
 
   const step = lesson.steps[currentStep];
 
@@ -43,6 +56,11 @@ export function LessonStepView({
       // Lesson complete
       startTransition(async () => {
         await completeLesson(categorySlug, moduleSlug, lesson.slug);
+        if (demoData) {
+          demoData.completeLesson(categorySlug, moduleSlug, lesson.slug);
+          demoData.updateStreak();
+          demoData.awardBadge("first-lesson", "First Lesson");
+        }
         if (nextLessonUrl) {
           router.push(nextLessonUrl);
         } else {
@@ -59,6 +77,9 @@ export function LessonStepView({
         lesson.slug,
         nextStep
       );
+      if (demoData) {
+        demoData.setLessonStep(categorySlug, moduleSlug, lesson.slug, nextStep);
+      }
       setCurrentStep(nextStep);
     });
   }
@@ -69,13 +90,23 @@ export function LessonStepView({
       for (const [promptId, value] of Object.entries(responses)) {
         if (typeof value === "string" && value.trim().length > 0) {
           const prompt = step.reflectPrompts?.find((p) => p.id === promptId);
+          const promptText = prompt?.prompt || promptId;
           await saveReflection(
             categorySlug,
             moduleSlug,
             lesson.slug,
-            prompt?.prompt || promptId,
+            promptText,
             value
           );
+          if (demoData) {
+            demoData.saveJournalEntry(
+              categorySlug,
+              moduleSlug,
+              lesson.slug,
+              promptText,
+              value
+            );
+          }
         }
       }
       goToNextStep();

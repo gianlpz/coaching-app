@@ -1,42 +1,30 @@
-import { auth } from "@/lib/auth";
-import { isDemoMode } from "@/lib/db";
-import { getCategories } from "@/lib/content";
-import { getUserLessonProgress } from "@/lib/progress";
-import { getStreak } from "@/lib/streaks";
+"use client";
+
+import Link from "next/link";
+import { useDemoContext } from "@/components/DemoDataProvider";
 import { StreakCounter } from "@/components/ui/StreakCounter";
 import { CategoryCard } from "@/components/journey/CategoryCard";
 import { Card } from "@/components/ui/Card";
-import { DemoDashboard } from "@/components/DemoDashboard";
-import Link from "next/link";
 
-export default async function DashboardPage() {
-  const session = isDemoMode ? { user: { id: "demo-user" } } : await auth();
-  const userId = session?.user?.id || "demo-user";
+interface CategoryInfo {
+  slug: string;
+  title: string;
+  description: string;
+  icon: string;
+  color: string;
+  totalLessons: number;
+  modules: {
+    slug: string;
+    lessons: { slug: string; title: string }[];
+  }[];
+}
 
-  const [categories, allProgress, streak] = await Promise.all([
-    getCategories(),
-    getUserLessonProgress(userId),
-    getStreak(userId),
-  ]);
+export function DemoDashboard({ categories }: { categories: CategoryInfo[] }) {
+  const demoData = useDemoContext();
+  const progress = demoData?.data?.lessonProgress ?? [];
+  const streak = demoData?.data?.streak ?? { currentStreak: 0 };
 
-  // In demo mode, render client component that reads from localStorage
-  if (isDemoMode) {
-    const demoCategoryData = categories.map((cat) => ({
-      slug: cat.slug,
-      title: cat.title,
-      description: cat.description,
-      icon: cat.icon,
-      color: cat.color,
-      totalLessons: cat.modules.reduce((sum, mod) => sum + mod.lessons.length, 0),
-      modules: cat.modules.map((mod) => ({
-        slug: mod.slug,
-        lessons: mod.lessons.map((l) => ({ slug: l.slug, title: l.title })),
-      })),
-    }));
-    return <DemoDashboard categories={demoCategoryData} />;
-  }
-
-  // Find the next incomplete lesson across all categories
+  // Find next incomplete lesson
   let nextLesson: {
     category: string;
     module: string;
@@ -48,13 +36,13 @@ export default async function DashboardPage() {
   for (const category of categories) {
     for (const mod of category.modules) {
       for (const lesson of mod.lessons) {
-        const progress = allProgress.find(
+        const done = progress.find(
           (p) =>
             p.categorySlug === category.slug &&
             p.moduleSlug === mod.slug &&
             p.lessonSlug === lesson.slug
         );
-        if (!progress?.completed) {
+        if (!done?.completed) {
           nextLesson = {
             category: category.slug,
             module: mod.slug,
@@ -70,16 +58,11 @@ export default async function DashboardPage() {
     if (nextLesson) break;
   }
 
-  // Count completed lessons per category
   const categoryProgress = categories.map((cat) => {
-    const totalLessons = cat.modules.reduce(
-      (sum, mod) => sum + mod.lessons.length,
-      0
-    );
-    const completedLessons = allProgress.filter(
+    const completedLessons = progress.filter(
       (p) => p.categorySlug === cat.slug && p.completed
     ).length;
-    return { ...cat, totalLessons, completedLessons };
+    return { ...cat, completedLessons };
   });
 
   return (
